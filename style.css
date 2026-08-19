@@ -1,6 +1,47 @@
+/* arima-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
 * {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+.header-section {
+    height: 112px;
+    padding-left: 160px;
+    padding-right: 160px;
+    display: flex;
+    align-items: center;
+    background-color: #4EA487;
+    gap: 102px;
+}
+
+.header-icon {
+    width: 72px;
+}
+
+.header-text {
+    display: flex;
+    gap: 72px
+}
+
+.header-text>a {
+    color: #F8F5EB;
+    font-size: 1.5rem;
+    font-family: 'Arima';
 }

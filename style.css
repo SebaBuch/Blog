@@ -11,11 +11,13 @@
 
 /* palanquin-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 500;
-  src: url('./assets/fontspalanquin-v17-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fontspalanquin-v17-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
@@ -86,4 +88,13 @@ html {
 
 .hightlight-text {
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 500;
+    color: #54370D;
+    font-size: 1.5rem;
+}
+>>>>>>> 3390224125f285342252c3a88d0231459ed3c92e

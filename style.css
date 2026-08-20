@@ -112,7 +112,8 @@ html {
     justify-content: center;
     align-items: flex-end;
     overflow: hidden;
-    gap: 22px;}
+    gap: 22px;
+}
 
 
 .slider_a input {
@@ -147,13 +148,13 @@ html {
     transition: all 0.5s ease-in-out;
 }
 
-.slider_a_wrapper > a {
+.slider_a_wrapper>a {
     display: block;
     width: calc(100% / 3);
     height: 100%;
 }
 
-.slider_a_wrapper > a > img {
+.slider_a_wrapper>a>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -168,12 +169,70 @@ html {
 }
 
 .slider_a input[value="three"]:checked~.slider_a_wrapper {
-    transform: translate(calc(-100%/3));}
+    transform: translate(calc(-100%/3));
+}
 
+.label-text {
+    font-family: 'Palanquin';
+    font-size: 1.5rem;
+    padding-top: 56px;
+}
+
+input[type=text],
+select,
+textarea {
+
+    width: 100%;
+    padding: 1px;
+    border: 2px #ccc;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "Palanquin";
+    font-size: 1.5rem;
+}
+
+.question-first {
+    display: flex;
+}
+
+.privacy {
+    font-family: "Palanquin";
+    color: #54370D;
+}
+
+input[type=send] {
+    background-color: #04aa6d00;
+    color: #737373;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "Arima";
+    font-style: bold;
+    font-size: 1.5rem;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #737373;
+    cursor: pointer;
+}
+
+input[type=send]:hover {
+    background-color: #F1C953;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: none;
+    padding: 20px;
+}
 
 .footer {
     background-color: rgba(78, 164, 135, 1);
-;
+    ;
     padding: 30px 0;
     margin-top: auto;
 }
@@ -182,16 +241,18 @@ html {
     width: 100%;
     padding-left: 120px;
     padding-right: 120px;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #4EA487;
-    
+
 }
+
 .footer p {
     color: rgba(255, 255, 255, 1);
 }
+
 .footer a {
     color: rgba(255, 255, 255, 1);
 }
@@ -201,6 +262,7 @@ html {
     align-items: center;
     gap: 40px;
 }
+
 .copyright {
     display: flex;
     align-items: center;
@@ -220,7 +282,7 @@ html {
     margin: 0;
 }
 
-.footer-left > div:last-child {
+.footer-left>div:last-child {
     display: flex;
     gap: 40px;
 }
@@ -230,18 +292,16 @@ html {
     align-items: center;
     gap: 8px;
 }
+
 .footer-right img {
     width: 32px;
     height: 32px;
 }
+
 .footer-right img[alt="Youtube"] {
     width: 44px;
 }
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+
 .footer {
     margin-top: auto;
 }

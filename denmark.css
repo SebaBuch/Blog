@@ -1,0 +1,168 @@
+/* arima-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fontspalanquin-v17-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+.header-section {
+    height: 112px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    align-items: center;
+    background-color: #4EA487;
+    gap: 102px;
+}
+
+.header-icon {
+    width: 72px;
+}
+
+.header-text {
+    display: flex;
+    gap: 72px
+}
+
+.header-text>a {
+    color: #F8F5EB;
+    font-size: 1.5rem;
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.highlight-section {
+    display: flex;
+    justify-content: center;
+    padding-left: 120px;
+    padding-right: 120px;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 120px;
+}
+
+.highlight-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.highlight-header>img {
+    height: 48px;
+}
+
+.highlight-header>h2 {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    color: #4EA487;
+}
+
+.hightlight-text {
+    text-align: center;
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 500;
+    color: #54370D;
+    font-size: 1.5rem;
+    padding-bottom: 88px;
+}
+
+
+.footer {
+    background-color: rgba(78, 164, 135, 1);
+    padding: 30px 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copyright img {
+    width: 16px;
+    height: 16px;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-left>div:last-child {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-right img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-right img[alt="Youtube"] {
+    width: 44px;
+}
+

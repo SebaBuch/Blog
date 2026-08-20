@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAVEL BlOG</title>
+    <title>TRAVEL BLOG</title>
     <link rel="icon" type="image/x-icon" href="./assets/icons/travel-icon.png" alt="travel blog icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -20,7 +20,7 @@
                     <div class="header-text">
                         <a href="#highlight">Highlights</a>
                         <a href="">FAQ</a>
-                        <a href="">Contact</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
 
     </main>
     <main></main>
-    <main>
+    <main class="contact-form" id="contact">
         <div class="highlight-section">
             <div class="highlight-header">
                 <img src="assets/icons/person.png" alt="person-icon">
@@ -70,26 +70,28 @@
             </div>
 
         </div>
-        <div class="container">
+        <div class="contacts">
             <form action="/action_page.php">
                 <div class="question-first">
-                    <label class="label-text" for="fname">What's your Name?</label>
-                    <textarea id="subject" name="subject" placeholder="Write something..">
-
-                    </textarea>
-
-                    <label class="label-text" for="email">What's your email?</label>
-                    <textarea id="subject" name="subject" placeholder="Write something..">
-                    </textarea>
+                    <div>
+                        <p class="contact-question" for="fname">What's your Name?</p>
+                        <textarea id="subject" name="subject" placeholder="Write something..">
+                        </textarea>
+                    </div>
+                    <div>
+                        <p class="contact-question" for="email">What's your email?</p>
+                        <textarea id="subject" name="subject" placeholder="Write something..">
+                        </textarea>
+                    </div>
                 </div>
 
-                <label class="label-text" for="question">How can I help?</label>
-                <textarea id="subject" name="subject" placeholder="Write something..">
-                </textarea>
-                    <label class="privacy">I've read the <a href=""> privacy policy </a> and agree to the processing of my data
-                      <input type="checkbox">
-                      <span class="checkmark"></span>
-                    </label>
+                <p class="contact-question" for="question">How can I help?</p>
+                    <textarea id="subject" name="subject" placeholder="Write something..">
+                    </textarea>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                    <label class="privacy">I've read the <a href=""> privacy policy </a> and agree to the processing of my
+                    data</label>
 
                 <input class="send" type="send" value="Send">
             </form>
@@ -114,19 +116,19 @@
                 <a href="https://www.tiktok.com/" target="_blank">
                     <img src="./assets/icons/tiktok.png" alt="TikTok">
                 </a>
-                 <a href="https://www.youtube.com/" target="_blank">
-                   <img src="./assets/icons/youtube.png" alt="Youtube">
-                </a>
-                
-                <a href="https://www.facebook.com/" target="_blank">
-                   <img src="./assets/icons/facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                   <img src="./assets/icons/instagram.png" alt="Instagram">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="./assets/icons/youtube.png" alt="Youtube">
                 </a>
 
-               
-                
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./assets/icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./assets/icons/instagram.png" alt="Instagram">
+                </a>
+
+
+
 
             </div>
         </div>

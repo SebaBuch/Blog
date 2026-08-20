@@ -285,15 +285,14 @@ input[type=send]:hover {
 
 .contacts {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     border-radius: 5px;
-    background-color: none;
-    padding-bottom: 120px;
+    padding: 120px;
 }
 
 .footer {
-    background-color: rgba(78, 164, 135, 1);
+    background-color: rgb(77, 194, 155);
     padding: 30px 0;
     margin-top: auto;
 }

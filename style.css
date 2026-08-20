@@ -121,7 +121,10 @@ textarea {
     display: flex;
 }
 
-
+.privacy {
+    font-family: "Palanquin";
+    color: #54370D;
+}
 
 input[type=send] {
     background-color: #04aa6d00;

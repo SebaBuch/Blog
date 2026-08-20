@@ -122,8 +122,11 @@ textarea {
 }
 
 .privacy {
+    display: flex;
+    justify-content: center;
     font-family: "Palanquin";
     color: #54370D;
+    padding: 40px;
 }
 
 input[type=send] {
@@ -148,6 +151,8 @@ input[type=send]:hover {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
     border-radius: 5px;
     background-color: none;
     padding: 20px;

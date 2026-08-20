@@ -97,6 +97,31 @@ html {
     padding-bottom: 88px;
 }
 
+.article-header {
+    width: 1200px;
+    height: 524px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.article-main {
+    flex: 1;
+}
+
+.autor-card {
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
 
 .footer {
     background-color: rgba(78, 164, 135, 1);

@@ -252,11 +252,18 @@ textarea {
 }
 
 .privacy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Palanquin";
     color: #54370D;
+    padding-bottom: 25px;
 }
 
 input[type=send] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #04aa6d00;
     color: #737373;
     display: inline-block;

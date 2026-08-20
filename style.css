@@ -23,8 +23,8 @@ html {
 
 .header-section {
     height: 112px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 120px;
+    padding-right: 120px;
     display: flex;
     align-items: center;
     background-color: #4EA487;

@@ -172,9 +172,13 @@ html {
     transform: translate(calc(-100%/3));
 }
 
-.label-text {
+.contact-question {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
     font-family: 'Palanquin';
     font-size: 1.5rem;
+    color: #54370D;
     padding-top: 56px;
 }
 
@@ -196,6 +200,9 @@ textarea {
 
 .question-first {
     display: flex;
+    align-items: center;
+    justify-content:space-between;
+
 }
 
 .privacy {

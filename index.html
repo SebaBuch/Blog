@@ -9,25 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="blog">
     <header>
         <div class="landing-section">
             <div class="header-section">
                 <div class="header-icon">
-                    <img src="assets/icons/travel-icon.png" alt="Reise Blog Icon">
+                    <a href="#blog" target=><img src="assets/icons/travel-icon.png" alt="travel blog icon"></a>
                 </div>
                 <div class="header-information">
                     <div class="header-text">
-                        <a href="">Highlights</a>
+                        <a href="#highlight">Highlights</a>
                         <a href="">FAQ</a>
                         <a href="">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
+
     </header>
     <section></section>
-    <main>
+    <main id="highlight">
         <div class="highlight-section">
             <div class="highlight-header">
                 <img src="assets/icons/rocket.png" alt="rocket-icon">
@@ -36,10 +37,22 @@
 
             <div class="hightlight-text">
                 From the historical culture of Japan to the beautiful beaches and volcanic landscapes
-                of Gran Canaria to the calm <br> athmosphere of Denmark. Each destination offers a distinct
+                of Gran Canaria <br> to the calm athmosphere of Denmark. Each destination offers a distinct
                 way to explore the world.
             </div>
+        </div>
+        <div class="slider">
+            <section class="slider_a">
+                <input type="radio" name="slider" value="one" checked>
+                <input type="radio" name="slider" value="two">
+                <input type="radio" name="slider" value="three">
 
+                <div class="slider_a_wrapper">
+                    <a href=""><img class="element_one" src="assets/images/japan-fuji.jpg" alt=""></a>
+                    <a href=""><img class="element_two" src="assets/images/japan-beach.jpg" alt=""></a>
+                    <a href=""><img class="element_three" src="assets/images/japan-kyoto.jpg" alt=""></a>
+                </div>
+            </section>
         </div>
 
     </main>
@@ -78,7 +91,7 @@
                       <span class="checkmark"></span>
                     </label>
 
-                <input type="send" value="Send">
+                <input class="send" type="send" value="Send">
             </form>
         </div>
     </main>

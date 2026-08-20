@@ -80,11 +80,17 @@ html {
     height: 48px;
 }
 
-.highlight-header>h2 {
-    font-family: 'Arima';
-    font-style: normal;
-    font-weight: 700;
+h3 {
+    font-family: 'Palanquin';
+    font-size: 2.5rem;
     color: #4EA487;
+}
+
+h1 {
+    font-family: 'Arima';
+    font-size: 4rem;
+    font-style: normal;
+    color: #F1C953;
 }
 
 .hightlight-text {

@@ -88,13 +88,40 @@ html {
 
 .hightlight-text {
     text-align: center;
-<<<<<<< HEAD
-}
-=======
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 500;
     color: #54370D;
     font-size: 1.5rem;
 }
->>>>>>> 3390224125f285342252c3a88d0231459ed3c92e
+input[type=text], select, textarea {
+  
+  width: 100%;
+  padding: 12px;
+  border: 2px #ccc;
+  border-bottom-style: solid;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=send] {
+  background-color: #04aa6d00;
+  color: #737373;
+  padding: center;
+  border: 5px;
+  border-radius: 40px;
+  border-color: #737373;
+  cursor: pointer;
+}
+
+input[type=send]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #ce0c0c4f;
+  padding: 20px;
+}

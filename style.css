@@ -88,7 +88,71 @@ html {
 
 .hightlight-text {
     text-align: center;
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 500;
+    color: #54370D;
+    font-size: 1.5rem;
 }
+
+.label-text {
+    font-family: 'Palanquin';
+    font-size: 1.5rem;
+    padding-top: 56px;
+}
+
+input[type=text],
+select,
+textarea {
+
+    width: 100%;
+    padding: 1px;
+    border: 2px #ccc;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "Palanquin";
+    font-size: 1.5rem;
+}
+
+.question-first {
+    display: flex;
+}
+
+.privacy {
+    font-family: "Palanquin";
+    color: #54370D;
+}
+
+input[type=send] {
+    background-color: #04aa6d00;
+    color: #737373;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "Arima";
+    font-style: bold;
+    font-size: 1.5rem;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 40px;
+    border-color: #737373;
+    cursor: pointer;
+}
+
+input[type=send]:hover {
+    background-color: #F1C953;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: none;
+    padding: 20px;
+}
+
 
 .footer {
     background-color: rgba(78, 164, 135, 1);

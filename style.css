@@ -219,19 +219,23 @@ html {
     font-weight: 400;
 }
 
+.question-box {
+    max-width: 1440px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
 .contact-question {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: left;
     font-family: 'Palanquin';
     font-size: 1.5rem;
     color: #54370D;
     padding-top: 56px;
+    width: 530px;
 }
 
-input[type=text],
-select,
-textarea {
+.writing {
 
     width: 100%;
     padding: 1px;
@@ -243,12 +247,30 @@ textarea {
     resize: vertical;
     font-family: "Palanquin";
     font-size: 1.5rem;
+    max-width: 530px;
+    
+}
+.writing2 {
+
+    width: 100%;
+    padding: 1px;
+    border: 2px #ccc;
+    border-bottom-style: solid;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: "Palanquin";
+    font-size: 1.5rem;
+    max-width: 1100px;
+    
 }
 
 .question-first {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
 }
 
@@ -261,7 +283,7 @@ textarea {
     padding-bottom: 25px;
 }
 
-input[type=send] {
+.send {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,9 +300,10 @@ input[type=send] {
     border-radius: 40px;
     border-color: #737373;
     cursor: pointer;
+    transition: background-color 0.5s;
 }
 
-input[type=send]:hover {
+.send:hover {
     background-color: #F1C953;
 }
 

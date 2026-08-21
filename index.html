@@ -97,33 +97,38 @@
 
         </div>
         <div class="contacts">
-            <form class="" action="/action_page.php">
-                <div class="question-first">
-                    <div>
-                        <p class="contact-question" for="fname">What's your Name?</p>
-                        <textarea id="subject" name="subject" placeholder="Write something..">
-                        </textarea>
+            <form action="/action_page.php">
+                <box class="question-box">
+                    <div class="question-first">
+                        <div>
+                            <p class="contact-question" for="fname">What's your Name?</p>
+                            <input class="writing" id="subject" name="subject" placeholder="Mustermann, Max...">
+                            </input>
+                        </div>
+                        <div>
+                            <p class="contact-question" for="email">What's your email?</p>
+                            <input class="writing" id="subject" name="subject" placeholder="example@examp...">
+                            </input>
+                        </div>
                     </div>
-                    <div>
-                        <p class="contact-question" for="email">What's your email?</p>
-                        <textarea id="subject" name="subject" placeholder="Write something..">
-                        </textarea>
-                    </div>
-                </div>
 
-                <div>
-                    <p class="contact-question" for="question">How can I help?</p>
-                    <textarea id="subject" name="subject" placeholder="Write something..">
-                    </textarea>
-                </div>
+                    <div>
+                        <p class="contact-question" for="question">How can I help?</p>
+                        <input class="writing2" id="subject" name="subject" placeholder="Write something...">
+                        </input>
+                    </div>
+
+                    <div class="privacy">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        <p>I've read the <a href=""> privacy policy </a> and agree to the processing of my
+                            data</p>
+                    </div>
+                </box>
 
                 <div class="privacy">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <p>I've read the <a href=""> privacy policy </a> and agree to the processing of my
-                        data</p>
+                    <input class="send" type="send" disabled="Send" value="Send">
                 </div>
-                <input class="send" type="send" value="Send">
             </form>
         </div>
     </main>

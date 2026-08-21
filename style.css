@@ -89,26 +89,16 @@ html {
 .parent-cappadocia {
     display: flex;
     width: 100%;
-    height: 515px;
-    background-image: url("./assets/images/header-photo.jpg");
-    background-repeat: no-repeat;
-    transition: background-image 6s;
-    margin: auto;
-
+    height: 533px;
+    background-color: #F1C953;
+    
 }
-.parent-cappadocia:hover {
-    width: 100%;
-    height: 515px;
-    background-image: url("./assets/images/header-photo-zoom.jpg");
-    background-repeat: no-repeat;
+
    
-
-}
-
 
 .slide-cappadocia {
     max-width: 1440px;
-    position: relative;
+    position: absolute;
 
 }
 
@@ -116,14 +106,38 @@ html {
 .cappadocia-box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 345px;
-    max-height: 227px;
-    animation-name: "sliding-vertically";
+    padding-top: 120px;
+    padding-left: 120px;
+    width: 400px;
+    height: 900px;
+    z-index: 4;
+    opacity: 0;
+}
+
+.cappadocia-box {
+  position:absolute;
+  animation-name: cappadocia-animation;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+@keyframes cappadocia-animation {
+    0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+  0%   { left:570px; top:500px;}
+  50%  { left:570px; top:120px;}
+  100%  { left:0px; top:120px;}
+}
+.visible-after-animation {
+animation-fill-mode: forwards;
 }
 
 .headline-cappadocia {
-    background-color: #F1C953;
+    width: 100%;
     font-family: 'Arima';
     font-size: 3.25rem;
     font-style: normal;
@@ -133,13 +147,37 @@ html {
 }
 
 .cappadocia-text {
-    background-color: #F1C953;
     font-family: 'Palanquin';
+    width: 100%;
+    line-height: 100%;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     color: #54370D;
+    animation-delay: 2,5s;
+    opacity: 0;
 }
+.cappadocia-text {
+    animation-name: cappadocia-fade;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+@keyframes cappadocia-fade {
+    0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+  0%   { left:570px; top:500px;}
+  50%  { left:570px; top:120px;}
+  100%  { left:0px; top:120px;}
+}
+.visible-after-animation {
+animation-fill-mode: forwards;
+}
+
 
 .highlight-section {
     display: flex;

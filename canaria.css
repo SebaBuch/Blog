@@ -71,7 +71,7 @@ html {
 
 .highlight-header {
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
     gap: 8px;
 }
@@ -80,7 +80,7 @@ html {
     height: 48px;
 }
 
-h3 {
+h4 {
     font-family: 'Palanquin';
     font-size: 2.5rem;
     color: #4EA487;
@@ -94,13 +94,38 @@ h1 {
 }
 
 .hightlight-text {
-    text-align: center;
+    text-align:start;
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 500;
     color: #54370D;
     font-size: 1.5rem;
     padding-bottom: 88px;
+}
+
+.highlight-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 120px;
+}
+
+.highlight-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.highlight-top {
+display: flex;
+align-items: first baseline;
+}
+
+.author-box {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content:end;
+    align-items:last baseline;
 }
 
 .tipps-box {

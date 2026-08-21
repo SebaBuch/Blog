@@ -1,3 +1,65 @@
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/palanquin-v17-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/palanquin-dark-v17-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/palanquin-v17-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -79,6 +141,52 @@ html {
     opacity: 1;
 }
 
-.header-text a:visited{
+.header-text a:visited {
     color: #F1C953;
+}
+
+.intro {
+    padding-top: 128px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+h4 {
+    font-size: 2.5rem;
+    color: #4EA487;
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #F1C953;
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.intro-text p {
+    font-size: 2rem;
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    color: #54370D;
+    line-height: 1.2;
+}
+
+.intro-information {
+    display: flex;
+    gap: 32px;
+    padding-top: 40px;
+}
+
+.img-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
 }

@@ -16,9 +16,19 @@
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 500;
-    src: url('./assets/fontspalanquin-v17-latin-500.woff2') format('woff2');
+    src: url('./assets/fonts/palanquin-v17-latin-500.woff2') format('woff2');
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+/* palanquin-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/palanquin-v17-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 
 
 * {
@@ -74,6 +84,7 @@ html {
     align-items: center;
     justify-content: center;
     gap: 8px;
+    font-size: 3.25rem;
 }
 
 .highlight-header>img {
@@ -97,22 +108,48 @@ html {
     padding-bottom: 88px;
 }
 
-.article-header {
-    width: 1200px;
-    height: 524px;
-    margin: 0 auto;
+
+
+
+
+
+.highlight-section {
     display: flex;
-    justify-content: space-between;
-    gap: 48px;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 0;
 }
 
-.article-main {
-    flex: 1;
+.highlight-header {
+  display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.autor-card {
-    width: 250px;
+.highlight-header > h3 {
+    font-family: 'Palanquin';
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4EA487; ;
 }
+
+.highlight-header > h1 {
+font-family: 'Arima';
+font-size: 3rem;
+letter-spacing: 0;
+color: rgba(241, 201, 83, 1);
+;
+}
+
+.hightlight-text {
+    font-family: 'Palanquin';
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #54370D;
+}
+
+
 
 
 

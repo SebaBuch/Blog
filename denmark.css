@@ -185,10 +185,13 @@ color: rgba(241, 201, 83, 1);
 
 
 .footer {
-    background-color: rgba(78, 164, 135, 1);
+    background-color: rgb(77, 194, 155);
     padding: 30px 0;
     margin-top: auto;
+   font-family: 'Palanquin';
+    font-weight: 400;
 }
+
 
 .footer-container {
     width: 100%;
@@ -205,6 +208,8 @@ color: rgba(241, 201, 83, 1);
 
 .footer a {
     color: rgba(255, 255, 255, 1);
+    font-family: 'Palanquin';
+    font-weight: 400;
 }
 
 .footer-left {

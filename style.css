@@ -300,7 +300,7 @@ html {
     border-radius: 40px;
     border-color: #737373;
     cursor: pointer;
-    transition: background-color 1s;
+    transition: background-color 0.5s;
 }
 
 .send:hover {

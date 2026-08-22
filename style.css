@@ -41,11 +41,13 @@
 
 /* palanquin-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 * {
@@ -84,7 +86,146 @@ html {
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
+    position: relative;
 }
+
+.header-one::after {
+    content: url(assets/icons/higlight-underline.png);
+    position: absolute;
+    bottom: -11px;
+    left: 52%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease
+}
+
+.header-text .header-one:hover::after {
+    opacity: 1;
+}
+
+.header-two::after {
+    content: url(assets/icons/faq-underline.png);
+    position: absolute;
+    bottom: -8px;
+    left: 54%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease
+}
+
+.header-two:hover::after {
+    opacity: 1;
+}
+
+.header-three::after {
+    content: url(assets/icons/contact-underline.png);
+    position: absolute;
+    bottom: -8px;
+    left: 48%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease
+}
+
+.header-three:hover::after {
+    opacity: 1;
+}
+
+.header-text a:visited{
+    color: #F1C953;
+}
+
+.parent-cappadocia {
+    display: flex;
+    width: 100%;
+    height: 533px;
+    
+    
+}
+
+
+.slide-cappadocia {
+    max-width: 1440px;
+    position: absolute;
+
+}
+
+
+.cappadocia-box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+    padding-left: 120px;
+    width: 400px;
+    height: 900px;
+    z-index: 4;
+    opacity: 0;
+}
+
+.cappadocia-box {
+  position:absolute;
+  animation-name: cappadocia-animation;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+@keyframes cappadocia-animation {
+    0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+  0%   { left:570px; top:500px;}
+  50%  { left:570px; top:120px;}
+  100%  { left:0px; top:120px;}
+}
+.visible-after-animation {
+animation-fill-mode: forwards;
+}
+
+.headline-cappadocia {
+    width: 100%;
+    font-family: 'Arima';
+    font-size: 3.25rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #54370D;
+
+}
+
+.cappadocia-text {
+    font-family: 'Palanquin';
+    width: 100%;
+    line-height: 100%;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #54370D;
+    animation-delay: 2,5s;
+    opacity: 0;
+}
+.cappadocia-text {
+    animation-name: cappadocia-fade;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+@keyframes cappadocia-fade {
+    0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+  0%   { left:570px; top:500px;}
+  50%  { left:570px; top:120px;}
+  100%  { left:0px; top:120px;}
+}
+.visible-after-animation {
+animation-fill-mode: forwards;
+}
+
 
 .highlight-section {
     display: flex;
@@ -421,14 +562,14 @@ html {
     flex-direction: column;
     width: 100%;
     border-radius: 5px;
-    padding: 120px;
+    padding: 0px 120px 120px 120px;
 }
 
 .footer {
-    background-color: rgb(77, 194, 155);
+    background-color: #4EA487;
     padding: 30px 0;
     margin-top: auto;
-   font-family: 'Palanquin';
+    font-family: 'Palanquin';
     font-weight: 400;
 }
 
@@ -442,14 +583,14 @@ html {
 }
 
 .footer p {
-    color: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
 }
 
 .footer a {
-    color: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
     font-family: 'Palanquin';
     font-weight: 400;
-   
+
 }
 
 .footer-left {
@@ -471,19 +612,17 @@ html {
 
 .copyright p {
     margin: 0;
-    
+
 }
 
 .footer-left p {
     margin: 0;
-     
+
 }
 
 .footer-left>div:last-child {
     display: flex;
     gap: 40px;
-   
-    
 }
 
 .footer-right {

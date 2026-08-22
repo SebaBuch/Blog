@@ -119,7 +119,8 @@ html {
 
 .article-container {
     width: 1200px;
-    margin: auto;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .intro-container {
@@ -164,7 +165,7 @@ letter-spacing: 0;
 color: rgba(241, 201, 83, 1);
 }
 
-.hightlight-text {
+.highlight-text {
     font-family: 'Palanquin';
     font-size: 1.5rem;
     font-weight: 500;
@@ -200,7 +201,7 @@ color: rgba(241, 201, 83, 1);
 
 .article-content {
     max-width: 1200px;
-    margin-top: 32px auto 0;
+    margin: 32px auto 0;
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
@@ -216,6 +217,55 @@ color: rgba(241, 201, 83, 1);
     color: rgba(61, 61, 61, 1);
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+.author-card {
+    width: 272px;
+    height: 389px;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: rgba(78, 164, 135, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.author-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.author-name {
+    font-family: 'Arima';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #54370D;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.author-role {
+    font-family: 'Arima';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #54370D;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.author-description {
+    width: 240px;
+    font-family: 'Palanquin';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #3D3D3D;
+    text-align: left;
 }
 
 

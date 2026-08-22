@@ -38,6 +38,14 @@
   src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* arima-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 * {
     margin: 0;
@@ -243,7 +251,7 @@ color: rgba(241, 201, 83, 1);
     font-size: 18px;
     font-weight: 700;
     line-height: 120%;
-    color: #54370D;
+    color: rgba(84, 55, 13, 1);
     text-align: center;
     margin-bottom: 4px;
 }
@@ -253,7 +261,7 @@ color: rgba(241, 201, 83, 1);
     font-size: 18px;
     font-weight: 400;
     line-height: 120%;
-    color: #54370D;
+    color: rgba(84, 55, 13, 1);
     text-align: center;
     margin-bottom: 16px;
 }
@@ -264,10 +272,13 @@ color: rgba(241, 201, 83, 1);
     font-size: 16px;
     font-weight: 400;
     line-height: 120%;
-    color: #3D3D3D;
+    color: rgba(84, 55, 13, 1);
     text-align: left;
 }
-
+.article-left {
+    flex: 1;
+    min-width: 0;
+}
 
 
 

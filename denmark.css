@@ -287,6 +287,70 @@ color: rgba(241, 201, 83, 1);
 
 
 
+.tipps-box {
+    width: 100%;
+}
+
+.tipps-section {
+    width: 1083px;
+    height: 195px;
+
+    margin: 65px auto;
+
+    position: relative;
+}
+
+.list-tipps {
+    width: 1083px;
+    height: 195px;
+
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+
+    color: #54370D;
+    background-color: rgba(78, 164, 135, 0.2);
+
+    padding: 26px 16px 24px 16px;
+
+    border-radius: 30px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.pro-tipps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 195.92px;
+    height: 66px;
+
+    font-family: 'Palanquin';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+
+    color: #F1C953;
+    background-color: #4EA487;
+
+    border-radius: 10px;
+
+    position: absolute;
+    top: -6px;
+    left: -48px;
+
+    transform: rotate(-13.67deg);
+
+    z-index: 2;
+}
+
+
+
+
+
 .footer {
     background-color: rgb(77, 194, 155);
     padding: 30px 0;

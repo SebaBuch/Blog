@@ -22,29 +22,35 @@
 
 /* palanquin-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 600;
-  src: url('./assets/fonts/palanquin-v17-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/palanquin-v17-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* palanquin-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Palanquin';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* arima-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Arima';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 * {
@@ -152,26 +158,27 @@ html {
 }
 
 .highlight-header {
-  display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
     text-align: left;
 }
 
-.highlight-header > h3 {
+.highlight-header>h3 {
     font-family: 'Palanquin';
     font-size: 2rem;
     font-weight: 600;
-    color: #4EA487; ;
+    color: #4EA487;
+    ;
 }
 
-.highlight-header > h1 {
-font-family: 'Arima';
-font-size: 4rem;
-font-weight: 700;
-letter-spacing: 0;
-color: rgba(241, 201, 83, 1);
+.highlight-header>h1 {
+    font-family: 'Arima';
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: rgba(241, 201, 83, 1);
 }
 
 .highlight-text {
@@ -201,6 +208,7 @@ color: rgba(241, 201, 83, 1);
     width: 20px;
     height: auto;
 }
+
 .meta-item span {
     font-family: 'Palanquin';
     font-size: 16px;
@@ -247,7 +255,7 @@ color: rgba(241, 201, 83, 1);
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-   
+
 }
 
 .author-name {
@@ -258,7 +266,7 @@ color: rgba(241, 201, 83, 1);
     color: rgba(84, 55, 13, 1);
     text-align: center;
     margin-bottom: -12px;
-    
+
 }
 
 .author-role {
@@ -303,22 +311,26 @@ color: rgba(241, 201, 83, 1);
 .list-tipps {
     width: 1083px;
     height: 195px;
+    box-sizing: border-box;
 
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
 
-    color: #54370D;
+    color: rgba(61, 61, 61, 1);
     background-color: rgba(78, 164, 135, 0.2);
 
-    padding: 26px 16px 24px 16px;
+    margin: 0;
+    padding: 26px 16px 24px 52px;
 
     border-radius: 30px;
 
     position: relative;
     z-index: 1;
+
 }
+
 
 .pro-tipps {
     display: flex;
@@ -339,7 +351,7 @@ color: rgba(241, 201, 83, 1);
     border-radius: 10px;
 
     position: absolute;
-    top: -6px;
+    top: -48px;
     left: -48px;
 
     transform: rotate(-13.67deg);
@@ -348,6 +360,17 @@ color: rgba(241, 201, 83, 1);
 }
 
 
+.list-tipps a {
+    color: rgba(78, 164, 135, 1);
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: 0;
+
+    text-decoration: none;
+}
 
 
 
@@ -355,7 +378,7 @@ color: rgba(241, 201, 83, 1);
     background-color: rgb(77, 194, 155);
     padding: 30px 0;
     margin-top: auto;
-   font-family: 'Palanquin';
+    font-family: 'Palanquin';
     font-weight: 400;
 }
 
@@ -423,4 +446,3 @@ color: rgba(241, 201, 83, 1);
 .footer-right img[alt="Youtube"] {
     width: 44px;
 }
-

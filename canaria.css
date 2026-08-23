@@ -62,8 +62,6 @@ html {
 .highlight-section {
     display: flex;
     justify-content: center;
-    padding-left: 120px;
-    padding-right: 120px;
     flex-direction: column;
     gap: 24px;
     padding-top: 120px;
@@ -71,8 +69,6 @@ html {
 
 .highlight-header {
     display: flex;
-    align-items:flex-start;
-    justify-content: center;
     gap: 8px;
 }
 
@@ -98,13 +94,11 @@ h1 {
 
 .article-container {
     width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+    padding-left: 120px;
 }
 
 .intro-container {
     display: flex;
-    gap: 48px;
 }
 
 
@@ -192,7 +186,7 @@ h1 {
 .author-card {
     width: 272px;
     height: 400px;
-    padding: 16px;
+    padding: 30px;
     border-radius: 30px;
     background-color: #4ea48733;
     display: flex;
@@ -224,7 +218,7 @@ h1 {
 
 .author-role {
     font-family: 'Arima';
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 100;
     line-height: 100%;
     color: #54370d;
@@ -244,23 +238,79 @@ h1 {
     letter-spacing: 0;
     text-align: left;
 }
+
+
+
+
+
+.section-image {
+    padding: 120px;
+}
+
+.headline-slider {
+    display: flex;
+    justify-content: center;
+    font-family: 'Arima';
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: semi-bold;
+    color: #54370D;
+    width: 1100px;
+    padding-bottom: 120px;
+}
+
+.headline-image-slider {
+    z-index: 1;
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 4px 3px #08080870,
+        0px 14px 11px #050505a4,
+        0px 32px 24px #000000da;
+    object-fit: cover;
+    transform: perspective(350px) rotateY(20deg) translate(-20px);
+    transform-origin: 50% 50%;
+    filter: brightness(20%);
+
+    transition: all 0.75s ease-in-out;
+}
+
+.headline-image-slider:hover{
+    z-index: 4;
+    filter: brightness(100%);
+    transform: perspective(450px) rotateY(0) translate(0) scaleX(1.5) scaleY(1.5);
+}
+
+.headline-image-slider:hover~.headline-image-slider{
+    z-index: 1;
+    filter: brightness(20%);
+    transform: perspective(350px) rotateY(-20deg) translate(20px);
+
+}
+
 .center-text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
     width: 1000px;
-    padding: 120px;
+    padding-left: 120px;
+    padding-bottom: 120px;
     font-family: 'Palanquin';
     font-size: 1.5rem;
     line-height: 120%;
     color: #3d3d3d;
+    
 }
+
+
+
 .word-style {
-    color:#0385ff;
+    color: #3d3d3d;
     font-style: italic;
     font-weight: bold;
     font-size: 1.6rem;
-    text-shadow: 0px 0px 20px #fcce00;
+    text-shadow: 0px 5px 10px #0000ff;
 }
 .center-list-headline {
     display: flex;
@@ -282,63 +332,88 @@ h1 {
     flex-direction: column;
     width: 1000px;
     padding-left: 220px;
-    padding-bottom: 120px;
     font-family: 'Palanquin';
     font-size: 1.5rem;
     line-height: 120%;
     color: #3d3d3d;
 }
 
+
 .tipps-box {
-    display: flex;
-    max-width: 1440px;
-    height: 300px;
-    align-items: center;
-    justify-content: center;
-    padding: 120px;
-    padding-left: 220px;
+    width: 100%;
+    padding-top:180px;
 }
 
 .tipps-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 120px;
+    width: 1083px;
+    height: 195px;
+    margin-left:120px;
+    position: relative;
 }
+
+.list-tipps {
+    width: 1083px;
+    height: 195px;
+    box-sizing: border-box;
+
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+
+    color: rgba(61, 61, 61, 1);
+    background-color: rgba(78, 164, 135, 0.2);
+
+    margin: 0;
+    padding: 26px 16px 24px 52px;
+
+    border-radius: 30px;
+
+    position: relative;
+    z-index: 1;
+
+}
+
 
 .pro-tipps {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    font-family: 'Palanquin';
-    font-size: 1.75rem;
-    color: #F1C953;
+    width: 195.92px;
     height: 66px;
-    width: 250px;
+    font-family: 'Palanquin';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #F1C953;
     background-color: #4EA487;
-    rotate: -10deg;
-    border-radius: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: -48px;
+    left: -48px;
+    transform: rotate(-13.67deg);
     z-index: 2;
 }
 
-.list-tipps {
+
+.list-tipps a {
+    color: rgba(78, 164, 135, 1);
     font-family: 'Palanquin';
-    display: flex;
-    flex-direction:column;
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
     line-height: 120%;
-    color: #3d3d3d;
-    background-color: #4ea48733;
-    border-radius: 15px;
-    z-index: 1;
+    letter-spacing: 0;
+    text-decoration: none;
 }
+
+
 
 .last-text {
     display: flex;
     justify-content: flex;
     align-items: center;
+    flex-direction: column;
     width: 1000px;
     padding: 120px;
     font-family: 'Palanquin';
@@ -346,6 +421,79 @@ h1 {
     line-height: 120%;
     color: #3d3d3d;
 }
+
+
+
+
+.follow-me {
+    width: 493px;
+    height: 154px;
+    padding-bottom: 120px;
+    padding-left: 120px;
+}
+
+.follow-me-text {
+    width: 463px;
+    margin: 0 auto;
+    font-family: "Arima", cursive;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    color: #54350d;
+}
+
+.follow-me-action {
+    position: relative;
+    width: 100%;
+    height: 96px;
+}
+
+.rainbow {
+    text-shadow: 0px 5px 25px #000000;
+    animation: 1s infinite rainbow;
+}
+
+@keyframes rainbow {
+  0% { color: #ff0000; }
+  25% { color: #a7b300; }
+  50% { color: #008000; }
+  75% { color: #0000ff; }
+  100% { color: #ac00ac; }
+}
+
+
+
+
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 195.92px;
+    height: 66px;
+    font-family: 'Arima';
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #F1C953;
+    background-color: #4EA487;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    left: 100px;
+    bottom: 60px;
+    z-index: 1;
+}
+
+
+.share:hover {
+    background-color: #4EA487;
+    color: #F1C953;
+}
+
+
+
+
 
 
 .footer {
@@ -375,7 +523,6 @@ h1 {
     color: #FFFFFF;
     font-family: 'Palanquin';
     font-weight: 400;
-
 }
 
 .footer-left {
@@ -397,12 +544,10 @@ h1 {
 
 .copyright p {
     margin: 0;
-
 }
 
 .footer-left p {
     margin: 0;
-
 }
 
 .footer-left>div:last-child {

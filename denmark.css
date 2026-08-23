@@ -303,6 +303,56 @@ html {
 
 
 
+.video-container {
+    width: 931px;
+    height: 520px;
+    margin: 40px auto;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 53px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+
+.video-container {
+    width: 931px;
+    height: 520px;
+
+    margin: 40px auto;
+
+    border-radius: 53px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tipps-box {
     width: 100%;
 }

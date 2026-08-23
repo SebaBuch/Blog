@@ -194,12 +194,13 @@ h1 {
     height: 400px;
     padding: 16px;
     border-radius: 30px;
-    background-color: rgba(78, 164, 135, 0.2);
+    background-color: #4ea48733;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: end;
     gap: 8px;
+    box-shadow: 1px 4px 8px #443535;
 }
 
 .author-image {
@@ -289,6 +290,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 120px;
+    padding-left: 220px;
 }
 
 .tipps-section {
@@ -297,24 +299,21 @@ h1 {
     justify-content: center;
     width: 100%;
     height: 120px;
-    position: relative;
 }
 
 .pro-tipps {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     font-family: 'Palanquin';
     font-size: 1.75rem;
     color: #F1C953;
     height: 66px;
-    width: 200px;
+    width: 250px;
     background-color: #4EA487;
     rotate: -10deg;
     border-radius: 15px;
-    margin-bottom: 200px;
-    position: absolute;
-    left: 40px;
     z-index: 2;
 }
 
@@ -324,12 +323,10 @@ h1 {
     flex-direction: column;
     font-size: 1.5rem;
     line-height: 120%;
-    color: #54370D;
+    color: #3d3d3d;
     background-color: #4ea48733;
-    padding: 50px;
     border-radius: 15px;
-    padding-left: 80px;
-    position: absolute;
+    border-line: 50px;
     z-index: 1;
 }
 

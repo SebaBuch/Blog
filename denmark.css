@@ -53,6 +53,21 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+
+/* arima-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/arima-v7-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -302,47 +317,31 @@ html {
 
 
 
-
 .video-container {
     width: 931px;
-    height: 520px;
+    max-width: 100%;
+    aspect-ratio: 931 / 520;
+
     margin: 40px auto;
 
     position: relative;
     overflow: hidden;
-
     border-radius: 53px;
 }
 
 .video-thumbnail {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
     display: block;
-}
-
-
-.video-container {
-    width: 931px;
-    height: 520px;
-
-    margin: 40px auto;
-
-    border-radius: 53px;
-    overflow: hidden;
 }
 
 .video-container iframe {
     width: 100%;
     height: 100%;
-
     border: none;
     display: block;
 }
-
-
-
 
 
 

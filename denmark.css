@@ -56,11 +56,13 @@
 
 /* arima-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Arima';
-  font-style: normal;
-  font-weight: 500;
-  src: url('./assets/fonts/arima-v7-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/arima-v7-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
@@ -132,7 +134,7 @@ html {
 
 .article-container {
     width: 1200px;
-    
+
     margin: 0 auto;
 }
 
@@ -161,7 +163,7 @@ html {
     text-align: left;
 }
 
-.highlight-header > h3 {
+.highlight-header>h3 {
     margin: 0;
 
     font-family: 'Palanquin';
@@ -174,7 +176,7 @@ html {
     color: rgba(78, 164, 135, 1);
 }
 
-.highlight-header > h1 {
+.highlight-header>h1 {
     margin: 0;
 
     font-family: 'Arima';
@@ -254,6 +256,7 @@ html {
     display: flex;
     flex-direction: column;
 }
+
 .author-card {
     width: 272px;
     height: 389px;
@@ -270,6 +273,7 @@ html {
     align-items: center;
     gap: 8px;
 }
+
 .author-image {
     width: 120px;
     height: 120px;
@@ -432,7 +436,7 @@ html {
 .follow-me-cta {
     width: 493px;
     height: 154px;
-    margin: 80px auto;
+   margin: 120px auto 80px;
     position: relative;
 }
 
@@ -453,9 +457,56 @@ html {
     position: relative;
     width: 100%;
     height: 96px;
+    margin-top: 48px;
+}
+
+.arrow {
+    position: absolute;
+    width: 107px;
+    height: 65px;
+    left: 8px;
+    top: -35px;
+    object-fit: contain;
+    stroke-width: 3px;
+}
+
+button.share-icon {
+    position: absolute;
+
+    width: 178px;
+    height: 52px;
+
+    left: 144px;
+    top: 0;
+
+    border: none;
+    border-radius: 40px;
+
+    background-color: #50a98d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+button.share-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 
+button.share-icon span {
+    font-family: "Arima";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #f1c913;
+    letter-spacing: 5%;
+}
 
 
 .footer {

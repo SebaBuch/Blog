@@ -20,6 +20,16 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 
 * {
     margin: 0;
@@ -112,18 +122,19 @@ h1 {
 }
 
 .highlight-header {
-  display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
     text-align: left;
 }
 
-.highlight-header > h3 {
+.highlight-header>h3 {
     font-family: 'Palanquin';
     font-size: 2rem;
     font-weight: 600;
-    color: #4EA487; ;
+    color: #4EA487;
+    ;
 }
 
 
@@ -155,6 +166,7 @@ h1 {
     width: 20px;
     height: auto;
 }
+
 .meta-item span {
     font-family: 'Palanquin';
     font-size: 16px;
@@ -202,7 +214,7 @@ h1 {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-   
+
 }
 
 .author-name {
@@ -213,13 +225,14 @@ h1 {
     color: rgba(84, 55, 13, 1);
     text-align: center;
     margin-bottom: -12px;
-    
+
 }
 
 .author-role {
     font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
     font-size: 1.125rem;
-    font-weight: 100;
     line-height: 100%;
     color: #54370d;
     text-align: center;
@@ -275,13 +288,13 @@ h1 {
     transition: all 0.75s ease-in-out;
 }
 
-.headline-image-slider:hover{
+.headline-image-slider:hover {
     z-index: 2;
     filter: brightness(100%);
     transform: perspective(450px) rotateY(0) translate(0) scaleX(1.5) scaleY(1.5);
 }
 
-.headline-image-slider:hover~.headline-image-slider{
+.headline-image-slider:hover~.headline-image-slider {
     z-index: 1;
     filter: brightness(20%);
     transform: perspective(350px) rotateY(-20deg) translateX(20px);
@@ -300,7 +313,7 @@ h1 {
     font-size: 1.5rem;
     line-height: 120%;
     color: #3d3d3d;
-    
+
 }
 
 
@@ -312,6 +325,7 @@ h1 {
     font-size: 1.6rem;
     text-shadow: 0px 5px 10px #0000ff;
 }
+
 .center-list-headline {
     display: flex;
     justify-content: flex-start;
@@ -341,14 +355,14 @@ h1 {
 
 .tipps-box {
     width: 100%;
-    padding-top:180px;
-    
+    padding-top: 180px;
+
 }
 
 .tipps-section {
     width: 1083px;
     height: 195px;
-    margin-left:120px;
+    margin-left: 120px;
     position: relative;
 }
 
@@ -453,11 +467,25 @@ h1 {
 }
 
 @keyframes rainbow {
-  0% { color: #ff0000; }
-  25% { color: #a7b300; }
-  50% { color: #008000; }
-  75% { color: #0000ff; }
-  100% { color: #ac00ac; }
+    0% {
+        color: #ff0000;
+    }
+
+    25% {
+        color: #a7b300;
+    }
+
+    50% {
+        color: #008000;
+    }
+
+    75% {
+        color: #0000ff;
+    }
+
+    100% {
+        color: #ac00ac;
+    }
 }
 
 

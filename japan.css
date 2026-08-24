@@ -1,63 +1,65 @@
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
     src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 500;
     src: url('./assets/fonts/palanquin-v17-latin-500.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin Dark';
     font-style: normal;
     font-weight: 600;
     src: url('./assets/fonts/palanquin-dark-v17-latin-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* palanquin-700 - latin */
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 700;
     src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* palanquin-regular - latin */
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 400;
     src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 @font-face {
     font-display: swap;
-    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Palanquin';
     font-style: normal;
     font-weight: 600;
     src: url('./assets/fonts/palanquin-v17-latin-600.woff2') format('woff2');
-    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fontsarima-v7-latin-600.woff2') format('woff2');
 }
 
 * {
@@ -150,7 +152,12 @@ html {
     padding-left: 120px;
     padding-right: 120px;
     display: flex;
-    justify-content: flex-start;
+}
+
+.intro-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 h4 {
@@ -189,4 +196,108 @@ h1 {
     flex-direction: row;
     align-items: center;
     gap: 6px;
+}
+
+.author-card {
+    width: 272px;
+    height: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #4ea48733;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.author-image {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.author-name {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 120%;
+    color: rgba(84, 55, 13, 1);
+    text-align: center;
+    margin-bottom: -5px;
+
+}
+
+.author-role {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 0%;
+    color: #54370d;
+    text-align: center;
+
+}
+
+.author-description {
+    width: 240px;
+    height: 171px;
+    margin: 0;
+    font-family: 'Palanquin';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #54370d;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.section-photo {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 88px;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.photo-header {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.slider_b {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    gap: 0;
+}
+
+.slider_b_element {
+    z-index: 1;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    margin: 0;
+    box-shadow: 0px 4px 3px rgba(3, 7, 18, 0.03),
+        0px 14px 11px rgba(3, 7, 18, 0.05),
+        0px 32px 24px rgba(3, 7, 18, 0.08);
+    transform: perspective(250px) rotateY(20deg) translateX(-70px);
+    transform-origin: 50px 50px;
+    transition: all 250ms ease-in-out;
+    border-radius: 16px;
+}
+
+.slider_b_element:hover {
+    margin: 0 20px;
+    z-index: 2;
+    transform: perspective(350px) rotateY(0deg) translateX(0px) scaleX(1.3) scaleY(1.3);
+}
+
+.slider_b_element:hover~.slider_b_element {
+    transform: perspective(250px) rotateY(-20deg) translateX(10px);
+    margin: 0 20px;
 }

@@ -461,14 +461,16 @@ html {
 }
 
 .arrow {
-    position: absolute;
-    width: 107px;
-    height: 65px;
-    left: 8px;
-    top: -35px;
-    object-fit: contain;
-    stroke-width: 3px;
+   
+     display: flex;
+    padding-top: 0;
+    transform: translateY(-50px);
+
 }
+
+
+
+
 
 button.share-icon {
     position: absolute;

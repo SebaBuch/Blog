@@ -405,3 +405,103 @@ h1 {
     line-height: 120%;
     color: #3d3d3d;
 }
+
+.follow-me-cta {
+    width: 493px;
+    height: 154px;
+    margin: 80px auto;
+    position: relative;
+}
+
+.follow-me-cta-text {
+    width: 463px;
+    margin: 0 auto;
+
+    font-family: "Arima", cursive;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+
+    text-align: center;
+    color: #54350d;
+}
+
+.follow-me-cta-action {
+    position: relative;
+    width: 100%;
+    height: 96px;
+}
+
+.footer {
+    background-color: #4EA487;
+    width: 100%;
+    padding: 30px;
+    margin-top: auto;
+    font-family: 'Palanquin';
+    font-weight: 400;
+}
+
+.footer-container {
+    background-color: #4EA487;
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    color: #FFFFFF;
+}
+
+.footer a {
+    color: #FFFFFF;
+    font-family: 'Palanquin';
+    font-weight: 400;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.copyright img {
+    width: 16px;
+    height: 16px;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-left>div:last-child {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-right img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-right img[alt="Youtube"] {
+    width: 44px;
+}

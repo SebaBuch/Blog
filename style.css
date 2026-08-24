@@ -146,6 +146,7 @@ html {
 .image-boarder {
     width: 1440px;
     height: 515px;
+    border-bottom-right-radius: 50px;
     z-index: 1;
     overflow: hidden;
 }

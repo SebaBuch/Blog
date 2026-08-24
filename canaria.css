@@ -254,17 +254,22 @@ h1 {
 
 
 .slider-gallery {
+
     padding: 120px;
 }
 
 .section-image {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 120px;
 }
 
 .headline-slider {
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
     font-family: 'Arima';
     font-size: 2rem;
     font-weight: 600;
@@ -380,7 +385,7 @@ h1 {
     margin: 0;
     padding: 26px 16px 24px 52px;
     border-radius: 30px;
-    box-shadow: 40px 40px 5px #3f0000;
+    box-shadow: 40px 40px 10px #4b502477;
     position: relative;
     z-index: 1;
 

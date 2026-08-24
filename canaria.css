@@ -268,7 +268,7 @@ h1 {
         0px 14px 11px #050505a4,
         0px 32px 24px #000000da;
     object-fit: cover;
-    transform: perspective(350px) rotateY(20deg) translate(-20px);
+    transform: perspective(350px) rotateY(20deg) translateX(-20px);
     transform-origin: 50% 50%;
     filter: brightness(20%);
 
@@ -276,7 +276,7 @@ h1 {
 }
 
 .headline-image-slider:hover{
-    z-index: 4;
+    z-index: 2;
     filter: brightness(100%);
     transform: perspective(450px) rotateY(0) translate(0) scaleX(1.5) scaleY(1.5);
 }
@@ -284,7 +284,7 @@ h1 {
 .headline-image-slider:hover~.headline-image-slider{
     z-index: 1;
     filter: brightness(20%);
-    transform: perspective(350px) rotateY(-20deg) translate(20px);
+    transform: perspective(350px) rotateY(-20deg) translateX(20px);
 
 }
 
@@ -342,6 +342,7 @@ h1 {
 .tipps-box {
     width: 100%;
     padding-top:180px;
+    
 }
 
 .tipps-section {
@@ -355,20 +356,16 @@ h1 {
     width: 1083px;
     height: 195px;
     box-sizing: border-box;
-
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
-
     color: rgba(61, 61, 61, 1);
     background-color: rgba(78, 164, 135, 0.2);
-
     margin: 0;
     padding: 26px 16px 24px 52px;
-
     border-radius: 30px;
-
+    box-shadow: -4px 4px 8px #3f0000;
     position: relative;
     z-index: 1;
 
@@ -387,6 +384,7 @@ h1 {
     line-height: 120%;
     color: #F1C953;
     background-color: #4EA487;
+    box-shadow: 1px 4px 8px #000000;
     border-radius: 10px;
     position: absolute;
     top: -48px;

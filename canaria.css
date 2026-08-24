@@ -101,10 +101,10 @@ h1 {
 }
 
 
-
 .article-container {
-    width: 1200px;
-    padding-left: 120px;
+    width: 100%;
+    padding: 120px;
+    padding-bottom: 0px;
 }
 
 .intro-container {
@@ -255,8 +255,11 @@ h1 {
 
 
 
-
+.slider-gallery {
+    padding: 120px;
+}
 .section-image {
+    display: flex;
     padding: 120px;
 }
 
@@ -269,7 +272,6 @@ h1 {
     font-style: semi-bold;
     color: #54370D;
     width: 1100px;
-    padding-bottom: 120px;
 }
 
 .headline-image-slider {
@@ -277,11 +279,11 @@ h1 {
     border-radius: 15px;
     width: 200px;
     height: 300px;
-    box-shadow: 0px 4px 3px #08080870,
+    box-shadow: 0px 4px 10px #08080870,
         0px 14px 11px #050505a4,
         0px 32px 24px #000000da;
     object-fit: cover;
-    transform: perspective(350px) rotateY(20deg) translateX(-20px);
+    transform: perspective(350px) rotateY(15deg) translateX(-10px);
     transform-origin: 50% 50%;
     filter: brightness(20%);
 
@@ -306,9 +308,9 @@ h1 {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    width: 1000px;
-    padding-left: 120px;
-    padding-bottom: 120px;
+    width: 100%;
+    padding: 120px;
+    padding-top: 0px;
     font-family: 'Palanquin';
     font-size: 1.5rem;
     line-height: 120%;
@@ -328,10 +330,10 @@ h1 {
 
 .center-list-headline {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 1000px;
-    padding-left: 220px;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 190px;
     padding-bottom: 25px;
     font-family: 'Palanquin';
     font-size: 1.5rem;
@@ -341,10 +343,10 @@ h1 {
 
 .center-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items:flex-start;
     flex-direction: column;
-    width: 1000px;
+    width: 90%;
     padding-left: 220px;
     font-family: 'Palanquin';
     font-size: 1.5rem;
@@ -360,14 +362,14 @@ h1 {
 }
 
 .tipps-section {
-    width: 1083px;
+    width: 80%;
     height: 195px;
     margin-left: 120px;
     position: relative;
 }
 
 .list-tipps {
-    width: 1083px;
+    width: 100%;
     height: 195px;
     box-sizing: border-box;
     font-family: 'Palanquin';
@@ -379,7 +381,7 @@ h1 {
     margin: 0;
     padding: 26px 16px 24px 52px;
     border-radius: 30px;
-    box-shadow: -4px 4px 8px #3f0000;
+    box-shadow: 40px 40px 5px #3f0000;
     position: relative;
     z-index: 1;
 
@@ -398,7 +400,7 @@ h1 {
     line-height: 120%;
     color: #F1C953;
     background-color: #4EA487;
-    box-shadow: 1px 4px 8px #000000;
+    box-shadow: 4px 4px 8px #000000;
     border-radius: 10px;
     position: absolute;
     top: -48px;
@@ -426,7 +428,7 @@ h1 {
     justify-content: flex;
     align-items: center;
     flex-direction: column;
-    width: 1000px;
+    width: 100%;
     padding: 120px;
     font-family: 'Palanquin';
     font-size: 1.5rem;
@@ -438,9 +440,11 @@ h1 {
 
 
 .follow-me {
+    display: flex;
+    justify-self: center;
     width: 493px;
     height: 154px;
-    padding-bottom: 120px;
+    padding-bottom: 240px;
     padding-left: 120px;
 }
 
@@ -456,7 +460,7 @@ h1 {
 }
 
 .follow-me-action {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 96px;
 }
@@ -495,7 +499,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 195.92px;
+    width: 200px;
     height: 66px;
     font-family: 'Arima';
     font-size: 28px;
@@ -504,7 +508,6 @@ h1 {
     color: #F1C953;
     background-color: #4EA487;
     border-radius: 30px;
-    position: relative;
     cursor: pointer;
     left: 100px;
     bottom: 60px;

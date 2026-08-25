@@ -358,7 +358,8 @@ html {
 
 
 .article-text {
-    width: 100%;
+    width: 1201px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -368,12 +369,13 @@ html {
     margin: 0;
     padding: 0;
 
-    font-family: "Palanquin", sans-serif;
+    font-family: "Palanquin";
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0;
-    color: #3D3D3D;
+    color: rgba(61, 61, 61, 1);
+;
 }
 .text-01 {
     width: 1201px;
@@ -393,12 +395,12 @@ html {
     margin: 0;
     padding-left: 31px;
 
-    font-family: "Palanquin", sans-serif;
+    font-family: "Palanquin";
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0;
-    color: #3D3D3D;
+    color: rgba(61, 61, 61, 1);
 }
 
 .text-02 li {

@@ -66,6 +66,17 @@
 }
 
 
+/* arima-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/arima-v7-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 
 * {
     margin: 0;
@@ -346,6 +357,71 @@ html {
 
 
 
+.article-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.article-text p {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Palanquin", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #3D3D3D;
+}
+.text-01 {
+    width: 1201px;
+    height: auto;
+}
+
+.text-02 {
+    width: 1000px;
+    height: auto;
+}
+
+.text-02 p {
+    margin-bottom: 24px;
+}
+
+.text-02 ul {
+    margin: 0;
+    padding-left: 31px;
+
+    font-family: "Palanquin", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0;
+    color: #3D3D3D;
+}
+
+.text-02 li {
+    padding-left: 0;
+    margin: 0;
+}
+
+.text-02 strong {
+    font-weight: 700;
+}
+
+.text-03 {
+    width: 1201px;
+    height: auto;
+}
+
+.text-03 p {
+    margin: 0 0 24px 0;
+}
+
+.text-03 p:last-child {
+    margin-bottom: 0;
+}
 
 
 
@@ -436,7 +512,7 @@ html {
 .follow-me-cta {
     width: 493px;
     height: 154px;
-   margin: 120px auto 80px;
+    margin: 120px auto 80px;
     position: relative;
 }
 
@@ -444,7 +520,7 @@ html {
     width: 463px;
     margin: 0 auto;
 
-    font-family: "Arima", cursive;
+    font-family: "Arima";
     font-size: 24px;
     font-weight: 500;
     line-height: 120%;
@@ -461,55 +537,107 @@ html {
 }
 
 .arrow {
-   
-     display: flex;
+
+    display: flex;
     padding-top: 0;
-    transform: translateY(-50px);
+    transform: translateY(-60px);
 
 }
 
+.share-icon {
+    width: 158px;
+    height: 48px;
 
-
-
-
-button.share-icon {
-    position: absolute;
-
-    width: 178px;
-    height: 52px;
-
-    left: 144px;
-    top: 0;
-
-    border: none;
     border-radius: 40px;
-
     background-color: #50a98d;
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
-    cursor: pointer;
 }
 
-button.share-icon img {
+.share-icon img {
     width: 32px;
     height: 32px;
     object-fit: contain;
 }
 
-
-button.share-icon span {
+.share-icon label {
     font-family: "Arima";
     font-size: 24px;
     font-weight: 700;
     line-height: 120%;
+
     color: #f1c913;
     letter-spacing: 5%;
+
+    cursor: pointer;
 }
 
+#share-toggle {
+    display: none;
+}
+
+
+.share-options a {
+    color: #4ea487;
+    text-decoration: underline;
+
+    font-family: "Arima";
+    font-si ze: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    lettr-spacing: 5%;
+}
+
+
+.share-container {
+    position: absolute;
+    left: 144px;
+    top: 0;
+}
+
+
+.share-options {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0;
+    position: absolute;
+    left: 168px;
+    top: 0;
+}
+
+#share-toggle:checked~.share-options {
+    display: flex;
+}
+
+.share-green {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.share-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    width: 92px;
+}
+
+.share-links a {
+    color: #4ea487;
+    text-decoration: underline;
+
+    font-family: 'Arima';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 5%;
+}
 
 .footer {
     background-color: rgb(77, 194, 155);

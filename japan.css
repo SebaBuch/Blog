@@ -62,6 +62,14 @@
     src: url('./assets/fontsarima-v7-latin-600.woff2') format('woff2');
 }
 
+@font-face {
+    font-display: swap;
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/arima-v7-latin-500.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -157,7 +165,11 @@ html {
 .intro-all {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    width: 100%;
+}
+
+.intro-all {
+    flex: 1;
 }
 
 h4 {
@@ -200,7 +212,7 @@ h1 {
 
 .author-card {
     width: 272px;
-    height: 100%;
+    height: 492px;
     padding: 30px;
     border-radius: 30px;
     background-color: #4ea48733;
@@ -251,13 +263,20 @@ h1 {
     text-align: left;
 }
 
+.photo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 88px;
+}
+
 .section-photo {
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding-top: 88px;
-    padding-left: 160px;
-    padding-right: 160px;
+    width: 100%;
 }
 
 .photo-header {
@@ -274,7 +293,6 @@ h1 {
     align-items: center;
     padding-bottom: 80px;
     padding-top: 88px;
-    margin-left: 35px;
 }
 
 .slider_b_element {
@@ -285,7 +303,7 @@ h1 {
     box-shadow: 0px 4px 3px rgba(3, 7, 18, 0.03),
         0px 14px 11px rgba(3, 7, 18, 0.05),
         0px 32px 24px rgba(3, 7, 18, 0.08);
-    transform: perspective(250px) rotateY(20deg) translateX(-70px);
+    transform: perspective(250px) rotateY(20deg) translateX(-20px);
     transform-origin: center;
     transition: all 250ms ease-in-out;
     border-radius: 16px;
@@ -297,7 +315,8 @@ h1 {
 }
 
 .slider_b_element:hover~.slider_b_element {
-    transform: perspective(250px) rotateY(-20deg) translateX(70px);
+    z-index: 1;
+    transform: perspective(250px) rotateY(-20deg) translateX(20px);
 }
 
 .japan-text {
@@ -328,21 +347,20 @@ h1 {
 }
 
 .tipps-box {
-    width: 100%;
+    display: flex;
+    justify-content: center;
     padding-top: 180px;
-
+    padding-bottom: 88px;
 }
 
 .tipps-section {
     width: 80%;
     height: 195px;
-    margin-left: 120px;
     position: relative;
 }
 
 .list-tipps {
     width: 100%;
-    height: 195px;
     box-sizing: border-box;
     font-family: 'Palanquin';
     font-size: 24px;
@@ -355,7 +373,6 @@ h1 {
     border-radius: 30px;
     position: relative;
     z-index: 1;
-
 }
 
 
@@ -392,7 +409,6 @@ h1 {
 }
 
 
-
 .last-text {
     display: flex;
     justify-content: flex;
@@ -406,31 +422,31 @@ h1 {
     color: #3d3d3d;
 }
 
-.follow-me-cta {
-    width: 493px;
-    height: 154px;
-    margin: 80px auto;
-    position: relative;
+
+.share-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 88px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
-.follow-me-cta-text {
-    width: 463px;
-    margin: 0 auto;
-
-    font-family: "Arima", cursive;
-    font-size: 24px;
+.share-text {
+    font-family: 'Arima';
+    font-style: normal;
     font-weight: 500;
-    line-height: 120%;
-
-    text-align: center;
-    color: #54350d;
+    font-size: 1.5rem;
+    color: #54370D;
 }
 
-.follow-me-cta-action {
-    position: relative;
-    width: 100%;
-    height: 96px;
+.share-information {
+    display: flex;
+    flex-direction: row;
 }
+
+.share-arrow{display: flex;
+position: relative;}
 
 .footer {
     background-color: #4EA487;
@@ -504,4 +520,223 @@ h1 {
 
 .footer-right img[alt="Youtube"] {
     width: 44px;
+}
+
+@media screen and (min-width: 1440px) {
+    .header-section {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+
+    .intro {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+
+    .photo-box {
+        padding-left: max(160px, calc(50% - 720px));
+        padding-right: max(160px, calc(50% - 720px));
+    }
+
+    .slider_b_element {
+        height: 300px;
+        width: 200px;
+    }
+
+    .japan-text {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+
+    .japan-information {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+
+    .tipps-box {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+
+    .footer-container {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1439px) {
+
+    .header-section {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+    .intro {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+    .photo-box {
+        padding-left: clamp(20px, calc(50% - 384px), 160px);
+        padding-right: clamp(20px, calc(50% - 384px), 160px);
+    }
+
+    .slider_b {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+    .slider_b_element {
+        height: 200px;
+        width: 150px;
+    }
+
+    .section-photo {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+    .japan-text {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+    .japan-information {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+    .tipps-box {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+    .footer-container {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+}
+
+@media screen and (min-width: 1253px) and (max-width:1439px) {
+    .slider_b_element {
+        height: 250px;
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:899px) {
+    .slider_b_element {
+        height: 250px;
+        width: 125px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:767px) {
+    .header-section {
+        padding-left: clamp(5px, calc(50% - 160px), 20px);
+        padding-right: clamp(5px, calc(50% - 160px), 20px);
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-information {
+        display: none;
+    }
+
+    .intro {
+        padding-left: clamp(5px, calc(50% - 160px), 20px);
+        padding-right: clamp(5px, calc(50% - 160px), 20px);
+        padding-top: 24px
+    }
+
+    .intro-all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-small h4 {
+        font-size: 1.25rem;
+    }
+
+    .intro-big h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro-text p {
+        font-size: 1.125rem;
+    }
+
+    .img-text p {
+        font-size: 1rem;
+    }
+
+    .intro-information {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .photo-box {
+        padding-left: clamp(5px, calc(50% - 160px), 20px);
+        padding-right: clamp(5px, calc(50% - 160px), 20px);
+    }
+
+    .photo-box h5 {
+        font-size: 1.25rem;
+    }
+
+    .japan-text {
+        padding-left: clamp(5px, calc(50% - 160px), 20px);
+        padding-right: clamp(5px, calc(50% - 160px), 20px);
+    }
+
+    .japan-text p {
+        font-size: 1rem;
+    }
+
+    .japan-information {
+        padding-left: clamp(5px, calc(50% - 160px), 20px);
+        padding-right: clamp(5px, calc(50% - 160px), 20px);
+    }
+
+    .japan-information p {
+        font-size: 1rem;
+    }
+
+    .tipps-box {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tipps-section {
+        width: 100%;
+        height: auto;
+    }
+
+    .pro-tipps {
+        width: 200px;
+        height: 66px;
+        font-size: 1.75rem;
+        top: -50px;
+        left: -7px;
+    }
+
+    .pro-tipps img {
+        transform: rotate(10deg);
+    }
+
+    .list-tipps {
+        font-size: 1rem;
+        padding: 40px 12px 20px 16px;
+        border-radius: 20px;
+    }
+
+
 }

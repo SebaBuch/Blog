@@ -436,7 +436,7 @@ html {
 .follow-me-cta {
     width: 493px;
     height: 154px;
-   margin: 120px auto 80px;
+    margin: 120px auto 80px;
     position: relative;
 }
 
@@ -444,7 +444,7 @@ html {
     width: 463px;
     margin: 0 auto;
 
-    font-family: "Arima", cursive;
+    font-family: "Arima";
     font-size: 24px;
     font-weight: 500;
     line-height: 120%;
@@ -461,53 +461,81 @@ html {
 }
 
 .arrow {
-   
-     display: flex;
+
+    display: flex;
     padding-top: 0;
-    transform: translateY(-50px);
+    transform: translateY(-60px);
 
 }
 
-
-
-
-
-button.share-icon {
-    position: absolute;
-
+.share-icon {
     width: 178px;
     height: 52px;
 
-    left: 144px;
-    top: 0;
-
-    border: none;
     border-radius: 40px;
-
     background-color: #50a98d;
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-
-    cursor: pointer;
 }
 
-button.share-icon img {
+.share-icon img {
     width: 32px;
     height: 32px;
     object-fit: contain;
 }
 
-
-button.share-icon span {
+.share-icon label {
     font-family: "Arima";
     font-size: 24px;
     font-weight: 700;
     line-height: 120%;
+
     color: #f1c913;
     letter-spacing: 5%;
+
+    cursor: pointer;
+}
+
+#share-toggle {
+    display: none;
+}
+
+.share-options {
+    display: none;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+
+}
+
+#share-toggle:checked~.share-options {
+    display: flex;
+}
+
+.share-options a {
+    color: #4ea487;
+
+    text-decoration: none;
+
+    font-family: "Palanquin";
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.share-container {
+    position: absolute;
+    left: 144px;
+    top: 0;
+}
+
+.share-green {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 

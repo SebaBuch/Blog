@@ -68,11 +68,13 @@
 
 /* arima-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Arima';
-  font-style: normal;
-  font-weight: 600;
-  src: url('./fonts/arima-v7-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/arima-v7-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 
@@ -515,12 +517,13 @@ html {
 
 .share-options a {
     color: #4ea487;
+    text-decoration: underline;
 
-    text-decoration: none;
-
-    font-family: "Palanquin";
-    font-size: 18px;
+    font-family: "Arima";
+    font-si ze: 18px;
     font-weight: 600;
+    line-height: 120%;
+    lettr-spacing: 5%;
 }
 
 
@@ -535,13 +538,13 @@ html {
     display: none;
     align-items: center;
     gap: 8px;
-  
+    margin-top: 0;
     position: absolute;
-    left: 188px;
+    left: 168px;
     top: 0;
 }
 
-#share-toggle:checked ~ .share-options {
+#share-toggle:checked~.share-options {
     display: flex;
 }
 

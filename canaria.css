@@ -376,7 +376,7 @@ h1 {
     font-style: italic;
     font-weight: bold;
     font-size: 1.6rem;
-    text-shadow: 0px 5px 10px #0000ff;
+    text-shadow: 1px 1px 7.5px #0000ff;
 }
 
 .center-list-headline {
@@ -384,11 +384,11 @@ h1 {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    padding-left: 190px;
+    padding-left: 120px;
     padding-bottom: 25px;
     font-family: 'Palanquin';
     font-size: 1.5rem;
-    line-height: 120%;
+    line-height: 110%;
     color: #3d3d3d;
 }
 
@@ -398,14 +398,14 @@ h1 {
     align-items: flex-start;
     flex-direction: column;
     width: 90%;
-    padding-left: 120px;
+    padding-left: 160px;
     padding-bottom: 120px;
+    list-style: url("./assets/icons/travel-icon-list.png");
     font-family: 'Palanquin';
     font-size: 1.5rem;
-    line-height: 120%;
+    line-height: 100%;
     color: #3d3d3d;
 }
-
 
 .tipps-section {
     width: 80%;
@@ -430,7 +430,7 @@ h1 {
     box-shadow: 40px 40px 10px #4b502477;
     position: relative;
     z-index: 1;
-
+    list-style-type: upper-roman;
 }
 
 
@@ -753,7 +753,7 @@ button.share-icon span {
 
     .word-style {
         font-size: 1rem;
-        text-shadow: 0px 5px 10px #2bff00;
+        text-shadow: 0px 1px 5px #2bff00;
     }
 
     .center-list-headline {
@@ -798,7 +798,7 @@ button.share-icon span {
 
 
 
-    .follow-me {}
+   
 
     .follow-me-text {
         font-size: 1.125rem;
@@ -807,7 +807,6 @@ button.share-icon span {
 
     .follow-me-action {
         width: 300px;
-        height: ;
     }
     .arrow {
         height: 90px;
@@ -816,9 +815,7 @@ button.share-icon span {
     transform: translateX(100px);
     }
 
-    button.share-icon {
-
-    }
+    
 
 
 

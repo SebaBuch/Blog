@@ -145,7 +145,6 @@ html {
 
 .article-container {
     width: 1200px;
-
     margin: 0 auto;
 }
 
@@ -176,20 +175,16 @@ html {
 
 .highlight-header>h3 {
     margin: 0;
-
     font-family: 'Palanquin';
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 120%;
-    line-height: 120%;
     letter-spacing: 0;
-
     color: rgba(78, 164, 135, 1);
 }
 
 .highlight-header>h1 {
     margin: 0;
-
     font-family: 'Arima';
     font-size: 64px;
     font-weight: 700;
@@ -211,6 +206,7 @@ html {
     font-size: 1.75rem;
     line-height: 1.1;
     padding: 0;
+
 }
 
 .article-meta {
@@ -243,7 +239,7 @@ html {
 
 .article-content {
     max-width: 1200px;
-    margin: 32px auto 0;
+    margin: 68px auto 0;
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
@@ -333,9 +329,7 @@ html {
     width: 931px;
     max-width: 100%;
     aspect-ratio: 931 / 520;
-
-    margin: 40px auto;
-
+    margin: 84px auto 0;
     position: relative;
     overflow: hidden;
     border-radius: 53px;
@@ -358,7 +352,8 @@ html {
 
 
 .article-text {
-    width: 100%;
+    width: 1201px;
+    margin: 72px auto 0;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -368,13 +363,14 @@ html {
     margin: 0;
     padding: 0;
 
-    font-family: "Palanquin", sans-serif;
+    font-family: "Palanquin";
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0;
-    color: #3D3D3D;
+    color: rgba(61, 61, 61, 1);
 }
+
 .text-01 {
     width: 1201px;
     height: auto;
@@ -393,12 +389,12 @@ html {
     margin: 0;
     padding-left: 31px;
 
-    font-family: "Palanquin", sans-serif;
+    font-family: "Palanquin";
     font-size: 24px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0;
-    color: #3D3D3D;
+    color: rgba(61, 61, 61, 1);
 }
 
 .text-02 li {
@@ -640,13 +636,12 @@ html {
 }
 
 .footer {
-    background-color: rgb(77, 194, 155);
-    padding: 30px 0;
+    background-color: #4EA487;
     margin-top: auto;
     font-family: 'Palanquin';
     font-weight: 400;
+    padding: 60px 0px;
 }
-
 
 .footer-container {
     width: 100%;

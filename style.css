@@ -622,6 +622,7 @@ to {
     max-width: 1440px;
     padding-left: 120px;
     padding-right: 120px;
+    margin: auto;
 }
 
 .contact-question {
@@ -637,7 +638,7 @@ to {
 
 .writing {
 
-    width: 100%;
+    width: 450px;
     padding: 1px;
     border: 2px #54370D;
     border-bottom-style: solid;
@@ -654,7 +655,7 @@ to {
 
 .writing2 {
 
-    width: 100%;
+    width: 450px;
     padding: 1px;
     border: 2px #54370D;
     border-bottom-style: solid;

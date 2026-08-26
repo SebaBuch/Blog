@@ -39,7 +39,7 @@
     scroll-behavior: smooth;
     max-width: 1440px;
     text-decoration: none;
-    
+
 }
 
 html {
@@ -50,6 +50,7 @@ html {
     width: 100%;
     background-color: #4EA487;
 }
+
 .header-section {
     height: 112px;
     padding-left: 120px;
@@ -362,6 +363,14 @@ h1 {
 
 }
 
+.slider_a {
+    display: none;
+}
+
+.slider_a_wrapper {
+    display: none;
+}
+
 .center-text {
     display: flex;
     justify-content: flex-start;
@@ -409,7 +418,7 @@ h1 {
     padding-left: 130px;
     padding-bottom: 120px;
     list-style: url("./assets/icons/travel-icon-list.png");
-    list-style-position:inside;
+    list-style-position: inside;
     font-family: 'Palanquin';
     font-size: 1.5rem;
     line-height: 1.2rem;
@@ -447,7 +456,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     width: 200px;
     height: 66px;
     padding: 10px;
@@ -654,7 +663,7 @@ button.share-icon span {
 
     body {
         background-color: #ff000000;
-        
+
     }
 
 
@@ -676,16 +685,17 @@ button.share-icon span {
 
 
 @media (max-width: 767px) {
-* {
-    margin: 0;
-    padding-left: 0px;
-    padding-right: 0px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    
-    text-decoration: none;
-    
-}
+    * {
+        margin: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+
+        text-decoration: none;
+
+    }
+
     .header-section {
         justify-content: center;
         position: fixed;
@@ -693,6 +703,7 @@ button.share-icon span {
         height: 80px;
         z-index: 10;
     }
+
     .header-information {
         display: none;
     }
@@ -704,13 +715,10 @@ button.share-icon span {
     .article-container {
         width: 300px;
         padding: 5px;
-        
+
     }
 
-    .intro-container {
-      
-        
-    }
+    .intro-container {}
 
     h4 {
         font-size: 1.25rem;
@@ -766,11 +774,87 @@ button.share-icon span {
     }
 
     .headline-image-slider {
+
         width: 130px;
         height: 195px;
     }
 
+    .headline-image-slider:hover {
+        z-index: 2;
+        justify-content: center;
+        filter: brightness(130%);
+    }
 
+    .section-image {
+        display: none;
+    }
+
+    .slider_a {
+        position: relative;
+        width: 280px;
+        height: 550px;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .slider_a input {
+        z-index: 2;
+    }
+
+    .slider_a input[type="radio"] {
+        appearance: none;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #6aecba42;
+        cursor: pointer;
+    }
+
+    .slider_a input[type="radio"]:checked {
+        background: #F1C953;
+        border-color: #00cedd;
+        width: 40px;
+        height: 28px;
+        border-radius: 20px;
+    }
+
+    .slider_a_wrapper {
+        z-index: 1;
+        width: 500%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .slider_a_element {
+        width: calc(100% / 5);
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .slider_a input[value="one"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(560px));
+    }
+
+    .slider_a input[value="two"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(280px));
+    }
+
+    .slider_a input[value="three"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(0));
+    }
+
+    .slider_a input[value="four"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(-280px));
+    }
+
+    .slider_a input[value="five"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(-560px));
+    }
 
     .center-text {
         width: 300px;
@@ -811,21 +895,12 @@ button.share-icon span {
         font-size: 1rem;
     }
 
-
-
-
-
     .last-text {
         font-size: 1rem;
         width: 300px;
         padding: 20px;
         padding-top: 200px;
-
     }
-
-
-
-   
 
     .follow-me-text {
         font-size: 1.125rem;
@@ -835,21 +910,13 @@ button.share-icon span {
     .follow-me-action {
         width: 300px;
     }
+
     .arrow {
         height: 90px;
         width: 30px;
-    transform: translateY(0px);
-    transform: translateX(100px);
+        transform: translateY(0px);
+        transform: translateX(100px);
     }
-
-    
-
-
-
-
-
-
-
 
     .footer {
         height: 134px;
@@ -887,7 +954,6 @@ button.share-icon span {
         flex-direction: column;
     }
 
-
     .footer-left>div:last-child {
         display: flex;
         gap: 0px;
@@ -907,6 +973,3 @@ button.share-icon span {
     }
 
 }
-
-
-@media (max-width: 319px) {}

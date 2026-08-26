@@ -451,7 +451,7 @@ html {
     color: rgba(61, 61, 61, 1);
     background-color: rgba(78, 164, 135, 0.2);
 
-    margin: 0;
+    margin: 120px 0 0;
     padding: 26px 16px 24px 52px;
 
     border-radius: 30px;
@@ -461,6 +461,17 @@ html {
 
 }
 
+.list-tipps a {
+    color: rgba(78, 164, 135, 1);
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: 0;
+
+    text-decoration: none;
+}
 
 .pro-tipps {
     display: flex;
@@ -490,17 +501,7 @@ html {
 }
 
 
-.list-tipps a {
-    color: rgba(78, 164, 135, 1);
-    font-family: 'Palanquin';
-    font-size: 24px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 120%;
-    letter-spacing: 0;
 
-    text-decoration: none;
-}
 
 
 
@@ -581,10 +582,10 @@ html {
     text-decoration: underline;
 
     font-family: "Arima";
-    font-si ze: 18px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 120%;
-    lettr-spacing: 5%;
+    letter-spacing: 5%;
 }
 
 

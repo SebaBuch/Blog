@@ -32,10 +32,14 @@
 
 
 * {
-    margin: 0;
+    margin: 0 auto;
+    padding-left: 5px auto;
+    padding-right: 5px auto;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    max-width: 1440px;
     text-decoration: none;
+    
 }
 
 html {
@@ -150,6 +154,7 @@ h1 {
 
 .article-container {
     width: 100%;
+    max-width: 1440px;
     padding: 120px;
     padding-bottom: 0px;
 }
@@ -301,7 +306,6 @@ h1 {
 
 
 .slider-gallery {
-
     padding: 120px;
 }
 
@@ -641,8 +645,8 @@ button.share-icon span {
 @media (min-width: 1441px) {
 
     body {
-        background-color: red;
-        display: block;
+        background-color: rgba(255, 0, 0, 0.219);
+        
     }
 
 

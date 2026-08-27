@@ -907,12 +907,33 @@ html {
     .highlight-section {
         width: 768px;
         padding: 60px;
+        display: flex;
+        justify-self: center;
+        padding-bottom: 0px;
+    }
+
+    .hightlight-text {
+        padding-bottom: 0px;
+    }
+
+    .slider {
+        padding: 60px;
+        padding-bottom: 0px;
+    }
+    
+    .faq-section {
+        padding: 60px;
     }
 
     .contacts {
         .justify-content: center;
+        padding: 60px;
+        padding-top: 0px;
     }
 
+    .question-box {
+        padding: 60px;
+    }
     .contact-question {
         width: 384px;
     }
@@ -924,7 +945,6 @@ html {
         justify-content: left;
 
     }
-
 
 
 

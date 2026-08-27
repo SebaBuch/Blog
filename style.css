@@ -266,7 +266,7 @@ html {
         opacity: 0;
     }
 
-    
+
 
     100% {
         opacity: 1;
@@ -276,10 +276,12 @@ html {
         left: 450px;
         top: 700px;
     }
+
     60% {
         left: 450px;
         top: 700px;
     }
+
     100% {
         left: 450px;
         top: 260px;
@@ -356,10 +358,11 @@ html {
         top: 120px;
     }
 }
+
 .sliding-entry {
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position: absolute;
     height: 516px;
     width: 533px;
     border-bottom-right-radius: 100px;
@@ -371,13 +374,11 @@ html {
 }
 
 @keyframes entry-animation {
-from {
+    from {}
 
+    to {}
 }
-to {
 
-}
-}
 .entry-after-animation {
     animation-fill-mode: forwards;
 }
@@ -795,4 +796,39 @@ to {
 
 .footer-right img[alt="Youtube"] {
     width: 44px;
+}
+
+.phone-footer {
+    background-color: #F1C953;
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    width: 100%;
+    display: none;
+}
+
+.phone-footer-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.phone-footer-img img {
+    height: 40px;
+    width: 40px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width:767px) {
+
+    .phone-footer {
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        height: 88px;
+    }
 }

@@ -702,11 +702,18 @@ h1 {
 }
 
 @media screen and (min-width: 320px) and (max-width:767px) {
+
     .header-section {
         padding-left: clamp(5px, calc(50% - 160px), 20px);
         padding-right: clamp(5px, calc(50% - 160px), 20px);
         display: flex;
         justify-content: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 70px;
     }
 
     .header-information {
@@ -716,7 +723,7 @@ h1 {
     .intro {
         padding-left: clamp(5px, calc(50% - 160px), 20px);
         padding-right: clamp(5px, calc(50% - 160px), 20px);
-        padding-top: 24px
+        padding-top: 90px
     }
 
     .intro-all {
@@ -942,6 +949,11 @@ h1 {
         rotate: 10deg;
     }
 
+    .footer {
+        padding-bottom: 150px;
+        padding-top: 55px;
+    }
+
     .footer-information {
         padding-left: clamp(5px, calc(50% - 160px), 20px);
         padding-right: clamp(5px, calc(50% - 160px), 20px);
@@ -975,5 +987,6 @@ h1 {
         left: 0;
         bottom: 0;
         z-index: 1000;
+        height: 88px;
     }
 }

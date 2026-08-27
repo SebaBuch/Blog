@@ -136,7 +136,8 @@ html {
 }
 
 .parent-cappadocia {
-    background-color: #F1C953;
+    display: flex;
+    background-color: #f1c95305;
     display: flex;
     width: 1440px;
     height: 515px;
@@ -802,11 +803,160 @@ html {
     width: 40px;
 }
 
-@media screen and (min-width: 768px) and (max-width:1439px) {
+
+@media (min-width: 1441px) {
+
+
+}
+
+@media screen and (min-width: 1024px) and (max-width:1440px) {
+.parent-cappadocia {
+        width: 1024px;
+    }
+
+    .image-header {
+        width: 1024px;
+
+    }
+
+    .image-boarder {
+        width: 1024px;
+    }
+
+    .slide-cappadocia {
+        max-width: 1000px;
+    }
+
+    .cappadocia-box {
+        padding: 60px;
+    }
+
+    .sliding-entry {
+        width: 350px;
+
+    }
+
+    @keyframes cappadocia-animation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+        0% {
+            left: 300px;
+            top: 500px;
+        }
+
+        50% {
+            left: 300px;
+            top: 125px;
+        }
+
+        100% {
+            left: 0px;
+            top: 125px;
+        }
+    }
+
+    @keyframes background-flag {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 0;
+        }
+
+
+        100% {
+            opacity: 1;
+        }
+
+        0% {
+            left: 260px;
+            top: 700px;
+        }
+
+        60% {
+            left: 260px;
+            top: 700px;
+        }
+
+        100% {
+            left: 260px;
+            top: 335px;
+        }
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .highlight-section {
+        width: 768px;
+        padding: 60px;
+        display: flex;
+        justify-self: center;
+        padding-bottom: 0px;
+    }
+
+    .hightlight-text {
+        padding-bottom: 0px;
+    }
+
+    .slider {
+        padding: 60px;
+        padding-bottom: 0px;
+    }
+
+    .faq-section {
+        padding: 60px;
+    }
+
+    .contacts {
+        justify-content: center;
+        padding: 60px;
+        padding-top: 0px;
+    }
+
+    .question-box {
+        padding: 60px;
+    }
+
+    .contact-question {
+        width: 384px;
+    }
+
+
+
+
+    .contact-question {
+        width: 392px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
 
     .parent-cappadocia {
         width: 768px;
-        background-color: #f1c95300;
     }
 
     .image-header {
@@ -903,7 +1053,7 @@ html {
             transform: rotate(360deg);
         }
     }
-    
+
     .highlight-section {
         width: 768px;
         padding: 60px;
@@ -920,13 +1070,13 @@ html {
         padding: 60px;
         padding-bottom: 0px;
     }
-    
+
     .faq-section {
         padding: 60px;
     }
 
     .contacts {
-        .justify-content: center;
+        justify-content: center;
         padding: 60px;
         padding-top: 0px;
     }
@@ -934,6 +1084,7 @@ html {
     .question-box {
         padding: 60px;
     }
+
     .contact-question {
         width: 384px;
     }
@@ -943,30 +1094,9 @@ html {
         padding: 0px;
         flex-direction: column;
         justify-content: left;
-
     }
 
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 320px) and (max-width:767px) {
 

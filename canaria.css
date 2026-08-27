@@ -669,26 +669,293 @@ button.share-icon span {
         scroll-behavior: smooth;
         max-width: 1440px;
         text-decoration: none;
-
     }
 
     body {
         background-color: #ff000000;
-
     }
 
 }
 
 @media (max-width: 1228px) {
+    * {
+        margin: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        text-decoration: none;
+    }
+
+    .article-container {
+        width: 300px auto;
+        padding: 60px;
+        padding-top: 0px;
+        flex-direction: column;
+    }
+
+    .intro-container {
+        flex-direction: column;
+    }
+
+    h4 {
+        width: 280px auto;
+    }
+
+    h1 {
+        width: 280px auto;
+    }
+
+    .highlight-text {
+        width: 280px auto;
+    }
+
+    .article-left {
+        flex-direction: column;
+    }
+
+    .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        justify-content: center;
+    }
+
+    .meta-item {
+        width: 280px;
+        flex-direction: row;
+    }
+
+    .author-card {
+        justify-self: center;
+    }
+
+    .headline-image-slider {
+        transform: rotateY(0deg) translateX(0px);
+    }
+
+    .slider-gallery {
+        width: 768px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .headline-slider {
+        font-size: 1.25rem;
+        width: 300px;
+        padding-bottom: 25px;
+        align-items: center;
+    }
+
+    .section-image {
+        padding: 60px;
+    }
+
+    .slider-gallery {
+        justify-self: center;
+    }
+
+    .headline-image-slider {
+        width: 130px;
+        height: 195px;
+    }
+
+    .section-image {
+        display: none;
+    }
+
+    .slider_a {
+        position: relative;
+        width: 280px;
+        height: 450px;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .slider_a input {
+        z-index: 2;
+    }
+
+    .slider_a input[type="radio"] {
+        appearance: none;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #6aecba42;
+        cursor: pointer;
+    }
+
+    .slider_a input[type="radio"]:checked {
+        background: #F1C953;
+        border-color: #00cedd;
+        width: 40px;
+        height: 28px;
+        border-radius: 20px;
+    }
+
+    .slider_a_wrapper {
+        z-index: 1;
+        width: 500%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .slider_a_element {
+        width: calc(100% / 5);
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .slider_a input[value="one"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(560px));
+    }
+
+    .slider_a input[value="two"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(280px));
+    }
+
+    .slider_a input[value="three"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(0));
+    }
+
+    .slider_a input[value="four"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(-280px));
+    }
+
+    .slider_a input[value="five"]:checked~.slider_a_wrapper {
+        transform: translateX(calc(-560px));
+    }
+
+    .center-text {
+        width: 300px auto;
+        padding: 60px;
+    }
+
+    .word-style {
+        text-shadow: 0px 1px 5px #2bff00;
+    }
+
+    .center-list-headline {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .center-list {
+        padding-left: 65px;
+        padding-right: 65px;
+        width: 300px auto;
+    }
+
+    .tipps-section {
+        margin-left: 15px;
+        display: flex;
+    }
+
     .list-tipps {
-        height: 330px;
+        height: 350px;
+        width: 768px;
+        padding: 120px auto;
+    }
+
+    .pro-tipps {
+        left: -5px ;
+        top: -70px ;
+        transform: rotate(-15deg);
     }
 
     .last-text {
-        padding-top: 200px;
+        width: 300px auto;
+        padding: 60px;
+        padding-top: 250px;
+    }
+
+    .follow-me {
+        width: 300px;
+        margin-bottom: 120PX;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .follow-me-text {
+        width: 300px;
+    }
+
+    .follow-me-action {
+        width: 300px auto;
+    }
+
+    .arrow {
+        width: 40px;
+        transform: translateY(0px);
+        transform: translateX(60px);
+    }
+
+    button.share-icon {
+        transform: translateY(0px);
+        transform: translateX(-40px);
+    }
+
+    .footer {
+        height: 134px;
+        margin-bottom: 88px;
+        padding: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1;
+    }
+
+    .footer-container {
+        width: 300px auto;
+        height: 134px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 88px;
+    }
+
+    .footer-left {
+        flex-direction: column-reverse;
+        width: 147px;
+        height: 134px;
+        gap: 5px;
+        padding-left: 0px;
+        justify-content: center;
+    }
+
+    .copyright {
+        gap: 0px;
+        flex-direction: row;
+    }
+
+    .footer-left-cookie {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-left>div:last-child {
+        display: flex;
+        gap: 0px;
+    }
+
+    .footer-right {
+        gap: 6px;
+    }
+
+    .footer-right img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-right img[alt="Youtube"] {
+        width: 33px;
     }
 }
-
 @media (max-width: 767px) {
     * {
         margin: 0;
@@ -752,9 +1019,9 @@ button.share-icon span {
     .article-meta {
         display: flex;
         flex-wrap: wrap;
-        gap: 16px;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        gap: 1px;
+        padding-top: 12px;
+        padding-bottom: 12px;
         justify-content: center;
     }
 
@@ -804,7 +1071,7 @@ button.share-icon span {
     .slider_a {
         position: relative;
         width: 280px;
-        height: 550px;
+        height: 450px;
         gap: 5px;
         display: flex;
         justify-content: center;

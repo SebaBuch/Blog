@@ -1221,6 +1221,7 @@ html {
     .slider-text {
         left: 10px;
         right: 35px;
+        bottom: 200px;
     }
 
     .slider-text h3 {
@@ -1229,6 +1230,8 @@ html {
 
     .slider-text p {
         font-size: 1.25rem;
+        max-height: 128px;
+        overflow: hidden;
     }
 
     .faq-section {

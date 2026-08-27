@@ -138,7 +138,7 @@ html {
 .parent-cappadocia {
     background-color: #F1C953;
     display: flex;
-    width: 100%;
+    width: 1440px;
     height: 515px;
 
 
@@ -812,6 +812,151 @@ html {
     height: 40px;
     width: 40px;
 }
+
+@media screen and (min-width: 768px) and (max-width:1439px) {
+
+    .parent-cappadocia {
+        width: 768px;
+        background-color: #f1c95300;
+    }
+
+    .image-header {
+        width: 760px;
+
+    }
+
+    .image-boarder {
+        width: 768px;
+    }
+
+    .slide-cappadocia {
+        max-width: 760px;
+    }
+
+    .cappadocia-box {
+        padding: 60px;
+    }
+
+    .sliding-entry {
+        width: 350px;
+
+    }
+
+    @keyframes cappadocia-animation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+
+        0% {
+            left: 300px;
+            top: 500px;
+        }
+
+        50% {
+            left: 300px;
+            top: 100px;
+        }
+
+        100% {
+            left: 0px;
+            top: 100px;
+        }
+    }
+
+    @keyframes background-flag {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        70% {
+            opacity: 0;
+        }
+
+
+        100% {
+            opacity: 1;
+        }
+
+        0% {
+            left: 260px;
+            top: 700px;
+        }
+
+        60% {
+            left: 260px;
+            top: 700px;
+        }
+
+        100% {
+            left: 260px;
+            top: 335px;
+        }
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    
+    .highlight-section {
+        width: 768px;
+        padding: 60px;
+    }
+
+    .contacts {
+        .justify-content: center;
+    }
+
+    .contact-question {
+        width: 384px;
+    }
+
+    .question-first {
+        width: 450px;
+        padding: 0px;
+        flex-direction: column;
+        justify-content: left;
+
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 320px) and (max-width:767px) {

@@ -15,13 +15,13 @@
             <div class="header-section">
                 <div class="header-icon">
                     <a href="./index.html" alt="link for the to the frontpage">
-                        <img src="assets/icons/travel-icon.png"alt="travel blog icon"></a>
+                        <img src="assets/icons/travel-icon.png" alt="travel blog icon"></a>
                 </div>
                 <div class="header-information">
                     <div class="header-text">
-                        <a href="#highlight">Highlights</a>
-                        <a href="">FAQ</a>
-                        <a href="#contact">Contact</a>
+                          <a class="header-one" href="#highlight">Highlights</a>
+                        <a class="header-two" href="#faq">FAQ</a>
+                        <a class="header-three" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@
         <div class="article-container">
             <div class="intro-container">
                 <div class="article-left">
-                    <div class="highlight-section">
+                    <div class="highlight-section" id="highlight">
                         <div class="highlight-header">
                             <h3>A Stylish Scandinavian Escape</h3>
                             <h1>
@@ -82,17 +82,18 @@
             </div>
             <div class="article-content">
                 <p>
-                    Discover Copenhagen beyond the postcard views. Explore colorful waterfront streets,
-                    cozy cafés, modern Nordic design and the city’s famous cycling culture. From Nyhavn
-                    to hidden local spots, Copenhagen is the perfect blend of historic charm and
-                    contemporary Scandinavian life.
+                    Discover Copenhagen beyond the postcard views, where colorful waterfront streets meet cozy cafés and
+                    elegant Nordic design. Explore the iconic Nyhavn, charming local neighborhoods, historic streets and
+                    hidden spots away from the busy tourist paths. Experience the city’s famous cycling culture,
+                    beautiful architecture and relaxed Scandinavian lifestyle as you move from one neighborhood to
+                    another.
                 </p>
             </div>
         </div>
     </main>
     <div class="video-container">
         <iframe src="https://www.youtube.com/embed/4x1Xr-0LW0w?si=OxALfW0DFuAfslKt" title="YouTube video player"
-            frameborder="0"
+            
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
@@ -144,14 +145,14 @@
             </p>
         </div>
     </section>
-    <div class="tipps-box">
-        <div class="tipps-section">
-            <div class="pro-tipps">
+    <div class="tips-box">
+        <div class="tips-section">
+            <div class="pro-tips">
                 <img src="./assets/icons/light-bulb.png" alt="light-bulb">
-                Pro tipps
+                Pro tips
             </div>
-            <ol class="list-tipps">
-                <li> Explore Copenhagen by bike —pedal through colorful streets, scenic waterfronts and hidden corners
+            <ol class="list-tips">
+                <li> Explore Copenhagen by bike — pedal through colorful streets, scenic waterfronts and hidden corners
                     while seeing the city like a local.
                 </li>
                 <li>Don’t miss Copenhagen’s top attractions, from historic landmarks to fascinating museums. Check the
@@ -171,9 +172,10 @@
             <div class="share-container">
                 <input type="checkbox" id="share-toggle">
                 <div class="share-icon">
-                    <label for="share-toggle">
-                        Share
-                    </label>
+                    <img src="./assets/icons/share.png" alt="">
+                    <label for="share-toggle"> Share</label>
+
+
                 </div>
                 <div class="share-options">
                     <img src="./assets/icons/share_green.svg" alt="" class="share-green">
@@ -183,6 +185,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer-container">
@@ -213,5 +216,4 @@
         </div>
     </footer>
 </body>
-
 </html>

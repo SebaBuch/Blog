@@ -662,15 +662,16 @@ button.share-icon span {
 @media (min-width: 1441px) {
 
     * {
-    margin: 0 auto;
-    padding-left: 0px auto;
-    padding-right: 0px auto;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    max-width: 1440px;
-    text-decoration: none;
+        margin: 0 auto;
+        padding-left: 0px auto;
+        padding-right: 0px auto;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        max-width: 1440px;
+        text-decoration: none;
 
-}
+    }
+
     body {
         background-color: #ff000000;
 
@@ -776,12 +777,9 @@ button.share-icon span {
 
     .section-image {
         padding: 20px;
-
-
     }
 
     .headline-image-slider {
-
         width: 130px;
         height: 195px;
     }
@@ -952,9 +950,10 @@ button.share-icon span {
     }
 
     .footer-container {
-        width: 375px;
+        width: 300px;
         height: 134px;
         padding-left: 0px;
+        padding-right: 0px;
         margin-bottom: 88px;
     }
 

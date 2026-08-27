@@ -452,10 +452,10 @@ h1 {
 .share-information {
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    padding-left: 240px;
-    padding-right: 400px;
+    gap: 50px;
     align-items: flex-end;
+    position: relative;
+    left: -80px;
 }
 
 .arrow-icon {
@@ -552,6 +552,28 @@ h1 {
     height: 32px;
 }
 
+.phone-footer {
+    background-color: #F1C953;
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    width: 100%;
+    display: none;
+}
+
+.phone-footer-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.phone-footer-img img {
+    height: 40px;
+    width: 40px;
+}
+
 @media screen and (min-width: 1440px) {
     .header-section {
         padding-left: max(120px, calc(50% - 720px));
@@ -589,11 +611,6 @@ h1 {
     }
 
     .follow-share {
-        padding-left: max(120px, calc(50% - 720px));
-        padding-right: max(120px, calc(50% - 720px));
-    }
-
-    .share-information {
         padding-left: max(120px, calc(50% - 720px));
         padding-right: max(120px, calc(50% - 720px));
     }
@@ -898,18 +915,31 @@ h1 {
         border-radius: 20px;
     }
 
-    .follow-me-cta {
+    .list-tipps a {
+        font-size: 1rem;
+    }
+
+    .follow-share {
         padding-left: clamp(5px, calc(50% - 160px), 20px);
         padding-right: clamp(5px, calc(50% - 160px), 20px);
+        justify-content: center;
+        align-items: center;
     }
 
-    .follow-me-cta p {
-        font-size: 1.125rem;
+    .share-information {
+        gap: 1px;
+        left: -35px;
     }
 
-    .arrow {
-        height: 30px;
+    .follow-share p {
+        font-size: 1rem;
+    }
+
+    .arrow-icon {
+        height: 50px;
         width: 50px;
+        border-radius: 3px;
+        rotate: 10deg;
     }
 
     .footer-information {
@@ -937,5 +967,13 @@ h1 {
 
     .footer-img img {
         height: 23px;
+    }
+
+    .phone-footer {
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
     }
 }

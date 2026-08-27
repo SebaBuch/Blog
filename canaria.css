@@ -32,9 +32,9 @@
 
 
 * {
-    margin: 0 auto;
-    padding-left: 0px auto;
-    padding-right: 0px auto;
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
     max-width: 1440px;
@@ -661,6 +661,16 @@ button.share-icon span {
 
 @media (min-width: 1441px) {
 
+    * {
+    margin: 0 auto;
+    padding-left: 0px auto;
+    padding-right: 0px auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 1440px;
+    text-decoration: none;
+
+}
     body {
         background-color: #ff000000;
 
@@ -715,10 +725,13 @@ button.share-icon span {
     .article-container {
         width: 300px;
         padding: 5px;
+        flex-direction: column;
 
     }
 
-    .intro-container {}
+    .intro-container {
+        flex-direction: column;
+    }
 
     h4 {
         font-size: 1.25rem;

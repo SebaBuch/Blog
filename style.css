@@ -373,16 +373,9 @@ html {
     z-index: 2;
 }
 
-@keyframes entry-animation {
-    from {}
-
-    to {}
-}
-
 .entry-after-animation {
     animation-fill-mode: forwards;
 }
-
 
 .highlight-section {
     display: flex;

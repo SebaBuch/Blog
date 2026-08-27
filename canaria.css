@@ -657,7 +657,27 @@ button.share-icon span {
     width: 44px;
 }
 
+.phone-footer {
+    background-color: #F1C953;
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    width: 100%;
+    display: none;
+}
 
+.phone-footer-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.phone-footer-img img {
+    height: 40px;
+    width: 40px;
+}
 
 @media (min-width: 1441px) {
 
@@ -673,6 +693,28 @@ button.share-icon span {
 
     body {
         background-color: #ff000000;
+    }
+
+    .phone-footer {
+        background-color: #F1C953;
+        display: flex;
+        justify-content: center;
+        height: 88px;
+        width: 100%;
+        display: none;
+    }
+
+    .phone-footer-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .phone-footer-img img {
+        height: 40px;
+        width: 40px;
     }
 
 }
@@ -865,8 +907,8 @@ button.share-icon span {
     }
 
     .pro-tipps {
-        left: -5px ;
-        top: -70px ;
+        left: -5px;
+        top: -70px;
         transform: rotate(-15deg);
     }
 
@@ -956,6 +998,7 @@ button.share-icon span {
         width: 33px;
     }
 }
+
 @media (max-width: 767px) {
     * {
         margin: 0;
@@ -971,7 +1014,7 @@ button.share-icon span {
     }
 
     .header-section {
-        justify-content: center;
+        justify-self: center;
         position: fixed;
         padding-left: 50%;
         padding-right: 50%;
@@ -1172,8 +1215,8 @@ button.share-icon span {
     }
 
     .pro-tipps {
-        left: -5px ;
-        top: -70px ;
+        left: -5px;
+        top: -70px;
         transform: rotate(-15deg);
     }
 
@@ -1268,6 +1311,15 @@ button.share-icon span {
 
     .footer-right img[alt="Youtube"] {
         width: 33px;
+    }
+
+    .phone-footer {
+        display: flex;
+        position: fixed;
+        width: 320px auto;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
     }
 
 }

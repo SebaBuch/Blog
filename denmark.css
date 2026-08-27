@@ -624,30 +624,116 @@ html {
 .footer-right img[alt="Youtube"] {
     width: 44px;
 }
+.phone-footer {
+    background-color: #F1C953;
+    display: flex;
+    justify-content: center;
+    height: 88px;
+    width: 100%;
+    display: none;
+}
+
+.phone-footer-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.phone-footer-img img {
+    height: 40px;
+    width: 40px;
+}
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1440px) {
     .header-section {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+    .footer-container {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .header-section {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .header-section {
+        padding-left: clamp(5px, calc(50% - 160px), 20px);
+        padding-right: clamp(5px, calc(50% - 160px), 20px);
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
         width: 100%;
         height: 70px;
-        padding-left: 0;
-        padding-right: 0;
-        justify-content: center;
     }
 
     .header-information {
         display: none;
     }
-     .header-icon {
-        width: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
     .header-icon img {
-            width: 50px;
-        height: auto;
-        display: block;
+        height: 56px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1439px) {
+    .footer-container {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+}
+
+
+    @media screen and (max-width: 980px) {
+    .footer-right {
+        gap: 30px;
+    }
+
+    .footer-left {
+        gap: 36px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:767px) {
+    .footer {
+        padding-bottom: 150px;
+        padding-top: 55px;
+    }
+    .footer-container {
+        padding-left: clamp(5px, calc(50% - 160px), 20px);
+        padding-right: clamp(5px, calc(50% - 160px), 20px);
+    }
+
+   
+.footer-left {
+        flex-direction: column;
+        gap: 1px;
+    }
+    
+    .footer-left p {
+        font-size: 1rem;
+    }
+
+    .phone-footer {
+        display: flex;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        height: 88px;
     }
 }

@@ -114,6 +114,52 @@ html {
     position: relative;
 }
 
+.header-one::after {
+    content: url(assets/icons/higlight-underline.png);
+    position: absolute;
+    bottom: -11px;
+    left: 52%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease
+}
+
+.header-text .header-one:hover::after {
+    opacity: 1;
+}
+
+.header-two::after {
+    content: url(assets/icons/faq-underline.png);
+    position: absolute;
+    bottom: -8px;
+    left: 54%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease
+}
+
+.header-two:hover::after {
+    opacity: 1;
+}
+
+.header-three::after {
+    content: url(assets/icons/contact-underline.png);
+    position: absolute;
+    bottom: -8px;
+    left: 48%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease
+}
+
+.header-three:hover::after {
+    opacity: 1;
+}
+
+.header-text a:visited {
+    color: #F1C953;
+}
+
 .highlight-section {
     display: flex;
     flex-direction: column;

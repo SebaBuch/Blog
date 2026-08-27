@@ -720,6 +720,10 @@ h1 {
         display: none;
     }
 
+    .header-icon img {
+        height: 56px;
+    }
+
     .intro {
         padding-left: clamp(5px, calc(50% - 160px), 20px);
         padding-right: clamp(5px, calc(50% - 160px), 20px);

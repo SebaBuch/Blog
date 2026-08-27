@@ -691,35 +691,9 @@ button.share-icon span {
         text-decoration: none;
     }
 
-    body {
-        background-color: #ff000000;
-    }
-
-    .phone-footer {
-        background-color: #F1C953;
-        display: flex;
-        justify-content: center;
-        height: 88px;
-        width: 100%;
-        display: none;
-    }
-
-    .phone-footer-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
-    .phone-footer-img img {
-        height: 40px;
-        width: 40px;
-    }
-
 }
 
-@media (max-width: 1228px) {
+@media (max-width: 1294px) {
     * {
         margin: 0;
         padding-left: 0px;
@@ -946,57 +920,16 @@ button.share-icon span {
 
     .footer {
         height: 134px;
-        margin-bottom: 88px;
         padding: 0px;
         padding-left: 20px;
         padding-right: 20px;
         line-height: 1;
-    }
-
-    .footer-container {
-        width: 300px auto;
-        height: 134px;
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-bottom: 88px;
-    }
-
-    .footer-left {
-        flex-direction: column-reverse;
-        width: 147px;
-        height: 134px;
-        gap: 5px;
-        padding-left: 0px;
-        justify-content: center;
-    }
-
-    .copyright {
-        gap: 0px;
-        flex-direction: row;
-    }
-
-    .footer-left-cookie {
         display: flex;
-        flex-direction: column;
+        justify-items: space-between;
     }
 
-    .footer-left>div:last-child {
-        display: flex;
-        gap: 0px;
-    }
 
-    .footer-right {
-        gap: 6px;
-    }
-
-    .footer-right img {
-        width: 24px;
-        height: 24px;
-    }
-
-    .footer-right img[alt="Youtube"] {
-        width: 33px;
-    }
+    
 }
 
 @media (max-width: 767px) {

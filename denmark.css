@@ -965,6 +965,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
     }
 
     .header-information {
@@ -1003,7 +1004,7 @@ html {
 
     .article-left {
         width: 100%;
-        max-width: 345px;
+        max-width: 100%;
         margin: 0 auto;
     }
 

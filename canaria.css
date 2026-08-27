@@ -696,7 +696,6 @@ button.share-icon span {
         box-sizing: border-box;
         scroll-behavior: smooth;
         text-decoration: none;
-
     }
 
     .header-section {
@@ -713,7 +712,8 @@ button.share-icon span {
 
     .article-container {
         width: 300px;
-        padding: 80px;
+        padding: 20px;
+        padding-top: 80px;
         flex-direction: column;
     }
 
@@ -742,6 +742,15 @@ button.share-icon span {
         flex-direction: column;
     }
 
+    .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        align-items: center;
+    }
+
     .meta-item {
         width: 280px;
         flex-direction: row;
@@ -749,14 +758,11 @@ button.share-icon span {
 
     .author-card-mobile {
         padding-top: 20px;
-
     }
-
 
     .headline-image-slider {
         transform: rotateY(0deg) translateX(0px);
     }
-
 
     .slider-gallery {
         padding-left: 20px;

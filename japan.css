@@ -773,7 +773,6 @@ h1 {
         transform: rotateY(0deg) translateX(0px);
     }
 
-
     .photo-box {
         padding-left: clamp(5px, calc(50% - 160px), 20px);
         padding-right: clamp(5px, calc(50% - 160px), 20px);

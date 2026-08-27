@@ -737,3 +737,222 @@ html {
         height: 88px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+
+    .article-container {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+
+    .intro-container {
+        width: 1184px;
+        gap: 360px;
+        margin-top: 68px;
+    }
+
+    .highlight-header {
+        width: 902px;
+    }
+
+    .highlight-header > h3 {
+        font-size: 40px;
+    }
+
+    .highlight-header > h1 {
+        font-size: 64px;
+    }
+
+    .highlight-text {
+        width: 902px;
+        font-size: 1.75rem;
+    }
+
+    .article-meta {
+        gap: 32px;
+        margin-top: 38px;
+    }
+
+    .article-content {
+        width: 100%;
+        margin-top: 68px;
+        font-size: 24px;
+    }
+
+    .article-content p {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .article-left {
+        width: 902px;
+    }
+
+    .author-card {
+        width: 272px;
+        height: 389px;
+    }
+
+    .author-description {
+        width: 240px;
+        height: 171px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+
+    .article-container {
+        padding-left: clamp(20px, calc(50% - 384px), 120px);
+        padding-right: clamp(20px, calc(50% - 384px), 120px);
+    }
+
+    .intro-container {
+        width: 100%;
+        max-width: 1184px;
+        gap: 40px;
+        margin-top: 68px;
+    }
+
+    .article-left {
+        width: 100%;
+        max-width: 902px;
+    }
+
+    .highlight-header {
+        width: 100%;
+    }
+
+    .highlight-header > h3 {
+        font-size: clamp(28px, 4vw, 40px);
+    }
+
+    .highlight-header > h1 {
+        font-size: clamp(40px, 6vw, 64px);
+    }
+
+    .highlight-text {
+        width: 100%;
+        font-size: clamp(20px, 2.5vw, 28px);
+    }
+
+    .article-meta {
+        gap: 20px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .article-content {
+        width: 100%;
+        margin-top: 50px;
+        font-size: clamp(18px, 2.2vw, 24px);
+    }
+
+    .article-content p {
+        width: 100%;
+        font-size: clamp(18px, 2.2vw, 24px);
+    }
+
+    .author-card {
+        width: 272px;
+        height: 389px;
+        flex-shrink: 0;
+    }
+
+    .author-description {
+        width: 240px;
+        height: 171px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .article-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .intro-container {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .article-left {
+        width: 100%;
+        max-width: 345px;
+        margin: 0 auto;
+    }
+
+    .highlight-header {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .highlight-header > h3 {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .highlight-header > h1 {
+        font-size: 40px;
+        line-height: 120%;
+    }
+
+    .highlight-text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .meta-item {
+        gap: 6px;
+    }
+
+    .meta-item img {
+        width: 18px;
+    }
+
+    .meta-item span {
+        font-size: 14px;
+    }
+
+    .article-content {
+        width: 100%;
+        margin-top: 40px;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .article-content p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .author-card {
+        width: 100%;
+        max-width: 345px;
+        height: auto;
+        min-height: 389px;
+        margin: 0 auto;
+    }
+
+    .author-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .author-description {
+        width: 100%;
+        max-width: 313px;
+        height: auto;
+        text-align: center;
+    }
+}

@@ -111,6 +111,7 @@ html {
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
+    position: relative;
 }
 
 .highlight-section {
@@ -134,16 +135,18 @@ html {
 }
 
 .article-container {
-    width: 1200px;
-    margin: 0 auto;
+    padding-top: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
 }
 
 .intro-container {
-    width: 100%;
-    margin: 72px 0 0;
     display: flex;
-    align-items: flex-start;
-    gap: 26px;
+    gap: 360px;
+    width: 1184px;
+     margin: 68px 0 0;
 }
 
 .highlight-header {
@@ -184,7 +187,7 @@ html {
     color: #54370D;
     font-size: 1.75rem;
     line-height: 1.1;
-    padding: 0;
+    padding: 0;  
 }
 
 .article-meta {
@@ -214,8 +217,8 @@ html {
 }
 
 .article-content {
-   width: 1200px;
-    margin: 68px auto 0;
+   width: 100%;
+    margin: 68px 0 0;
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
@@ -266,7 +269,7 @@ html {
     line-height: 120%;
     color: rgba(84, 55, 13, 1);
     text-align: center;
-    margin-bottom: -12px;
+    margin-bottom: 0;
 }
 
 .author-role {
@@ -381,18 +384,18 @@ html {
     margin-bottom: 0;
 }
 
-.tipps-box {
+.tips-box {
     width: 100%;
 }
 
-.tipps-section {
+.tips-section {
     width: 1083px;
     height: 195px;
     margin: 65px auto;
     position: relative;
 }
 
-.list-tipps {
+.list-tips {
     width: 1083px;
     height: 195px;
     box-sizing: border-box;
@@ -409,7 +412,7 @@ html {
     z-index: 1;
 }
 
-.list-tipps a {
+.list-tips a {
     color: rgba(78, 164, 135, 1);
     font-family: 'Palanquin';
     font-size: 24px;
@@ -420,7 +423,7 @@ html {
     text-decoration: none;
 }
 
-.pro-tipps {
+.pro-tips {
     display: flex;
     align-items: center;
     justify-content: center;

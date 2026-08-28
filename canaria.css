@@ -421,7 +421,7 @@ h1 {
     list-style-position: inside;
     font-family: 'Palanquin';
     font-size: 1.5rem;
-    line-height: 1.2rem;
+    line-height: 2rem;
     color: #3d3d3d;
 }
 
@@ -682,9 +682,9 @@ button.share-icon span {
 @media (min-width: 1441px) {
 
     * {
-        margin: 0 auto;
-        padding-left: 0px auto;
-        padding-right: 0px auto;
+        margin: center;
+        padding-left: center;
+        padding-right: center;
         box-sizing: border-box;
         scroll-behavior: smooth;
         max-width: 1440px;

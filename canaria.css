@@ -33,22 +33,14 @@
 
 * {
     margin: 0;
-    padding-left: 0px;
-    padding-right: 0px;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    max-width: 1440px;
     text-decoration: none;
 
 }
 
 html {
     font-size: 16px;
-}
-
-.landing-section {
-    width: 100%;
-    background-color: #4EA487;
 }
 
 .header-section {
@@ -124,6 +116,7 @@ html {
 .header-text a:visited {
     color: #F1C953;
 }
+
 
 .highlight-section {
     display: flex;
@@ -680,16 +673,17 @@ button.share-icon span {
 }
 
 @media (min-width: 1441px) {
-
-    * {
-        margin: center;
-        padding-left: center;
-        padding-right: center;
-        box-sizing: border-box;
-        scroll-behavior: smooth;
-        max-width: 1440px;
-        text-decoration: none;
+    .header-section {
+        padding-left: max(120px, calc(50% - 1440px));
+        padding-right: max(120px, calc(50% - 1440px));
     }
+
+    .article-container {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+
+
 
 }
 

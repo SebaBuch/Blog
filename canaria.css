@@ -679,9 +679,15 @@ button.share-icon span {
     }
 
     .article-container {
-        padding-left: max(120px, calc(50% - 720px));
-        padding-right: max(120px, calc(50% - 720px));
+        padding-left: max(120px, calc(50% - 1440px));
+        padding-right: max(120px, calc(50% - 1440px));
     }
+
+    .center-list {
+        padding-left: max(120px, calc(50% - 1440px));
+        padding-right: max(120px, calc(50% - 1440px));
+    }
+
 
 
 

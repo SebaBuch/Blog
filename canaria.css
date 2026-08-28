@@ -30,13 +30,11 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-
 * {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
-
 }
 
 html {
@@ -117,7 +115,6 @@ html {
     color: #F1C953;
 }
 
-
 .highlight-section {
     display: flex;
     justify-content: center;
@@ -149,7 +146,6 @@ h1 {
     line-height: 110%;
 }
 
-
 .article-container {
     width: 100%;
     max-width: 1440px;
@@ -160,7 +156,6 @@ h1 {
 .intro-container {
     display: flex;
 }
-
 
 .highlight-section {
     display: flex;
@@ -184,10 +179,7 @@ h1 {
     font-size: 2rem;
     font-weight: 600;
     color: #4EA487;
-    ;
 }
-
-
 
 .highlight-text {
     font-family: 'Palanquin';
@@ -242,7 +234,6 @@ h1 {
     margin: 0 auto;
 }
 
-
 .author-card {
     width: 272px;
     height: 400px;
@@ -262,7 +253,6 @@ h1 {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-
 }
 
 .author-name {
@@ -273,7 +263,6 @@ h1 {
     color: rgba(84, 55, 13, 1);
     text-align: center;
     margin-bottom: -12px;
-
 }
 
 .author-role {
@@ -284,7 +273,6 @@ h1 {
     line-height: 100%;
     color: #54370d;
     text-align: center;
-
 }
 
 .author-description {
@@ -299,9 +287,6 @@ h1 {
     letter-spacing: 0;
     text-align: left;
 }
-
-
-
 
 .slider-gallery {
     padding: 120px;
@@ -333,13 +318,12 @@ h1 {
     width: 200px;
     height: 300px;
     box-shadow: 0px 0px 50px #FFFFFF,
-        10px 24px 50px #e3fc01fd,
-        -10px -24px 50px #00f7ffbe;
+    10px 24px 50px #e3fc01fd,
+    -10px -24px 50px #00f7ffbe;
     object-fit: cover;
     transform: perspective(350px) rotateY(20deg) translateX(-20px);
     transform-origin: 50% 50%;
     filter: brightness(25%);
-
     transition: all 0.5s ease-in-out;
 }
 
@@ -353,7 +337,6 @@ h1 {
     z-index: 1;
     filter: brightness(25%);
     transform: perspective(350px) rotateY(-20deg) translateX(20px);
-
 }
 
 .slider_a {
@@ -376,10 +359,7 @@ h1 {
     font-size: 1.5rem;
     line-height: 120%;
     color: #3d3d3d;
-
 }
-
-
 
 .word-style {
     color: #3d3d3d;

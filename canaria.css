@@ -42,7 +42,7 @@ html {
 }
 
 .header-section {
-    height: 128px;
+    height: 112px;
     padding-left: 120px;
     padding-right: 120px;
     display: flex;
@@ -164,6 +164,7 @@ h1 {
     padding-left: 120px;
     align-items: flex-start;
     padding: 40px 0;
+    padding-right: 40px;
 }
 
 .highlight-header {
@@ -704,20 +705,50 @@ h1 {
 
 @media (min-width: 1441px) {
     .header-section {
-        padding-left: max(120px, calc(50% - 1440px));
-        padding-right: max(120px, calc(50% - 1440px));
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
     }
 
     .article-container {
-        padding-left: max(120px, calc(50% - 1440px));
-        padding-right: max(120px, calc(50% - 1440px));
+        width: 1440px;
+        padding: max(0px, calc(50% - 720px));
+        padding-top: 120px;
+        padding-bottom: 0px;
+}
+    .intro-container {
+        width: 1440px;
+        padding-left: max(0px, calc(50% - 720px));
+        padding-right: max(0px, calc(50% - 720px));
     }
 
+    .headline-slider {
+        padding-left: max(120px, calc(50% - 720px));
+    }
+
+    .center-text {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+    .center-list-headline {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
+    
     .center-list {
-        padding-left: max(120px, calc(50% - 1440px));
-        padding-right: max(120px, calc(50% - 1440px));
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
     }
 
+    .tipps-section {
+        margin-left: max(240px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+        
+    }
+
+    .last-text {
+        padding-left: max(120px, calc(50% - 720px));
+        padding-right: max(120px, calc(50% - 720px));
+    }
 
 
 

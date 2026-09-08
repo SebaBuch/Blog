@@ -799,6 +799,11 @@ html {
     width: 40px;
 }
 
+@media (min-width: 1787px) {
+    .cappadocia-box {
+        padding-left: max(300px, calc(50% - 893px));
+    }
+}
 
 @media (min-width: 1441px) {
 
@@ -814,8 +819,6 @@ html {
 
     .cappadocia-box {
         padding-left: max(160px, calc(50% - 720px));
-        padding-right: max(1100px, calc(50% - 720px));
-        width: 100%;
     }
 
     .cappadocia-text p {

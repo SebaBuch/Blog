@@ -365,7 +365,8 @@ html {
 }
 
 .article-text {
-    width: calc(100% - 240px);
+     width: 1200px;
+    max-width: 100%;
     margin: 72px auto 0;
     display: flex;
     flex-direction: column;
@@ -389,7 +390,7 @@ html {
 }
 
 .text-02 {
-    width: 1000px;
+    width: 100%;
     height: auto;
 }
 
@@ -767,12 +768,12 @@ html {
     }
 
     .article-text {
-        width: 1200px;
-        margin: 72px auto 0;
+       width: calc(100% - 480px);
+    margin: 72px 240px 0;
     }
 
     .text-02 {
-        width: 1000px;
+        width: 100%;
     }
 
     .tips-section {

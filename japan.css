@@ -462,30 +462,76 @@ h1 {
     height: 105px;
 }
 
+.share-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#share-toggle {
+    display: none;
+}
+
 .follow-button {
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 8px;
     background-color: #4EA487;
     border-radius: 40px;
     height: 50px;
+    width: 158px;
     border: 1px solid #4EA487;
+    cursor: pointer;
 }
 
 .follow-button img {
     width: 24px;
 }
 
-.follow-button a {
+.follow-button span {
     font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 158px;
-    gap: 8px;
     color: #F1C953;
     font-family: 'Arima';
     font-style: normal;
     font-weight: 700;
+}
+
+.share-options {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    left: calc(100% + 20px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#share-toggle:checked~.share-options {
+    display: flex;
+}
+
+.share-green {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.share-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    width: 92px;
+}
+
+.share-links a {
+    color: #4EA487;
+    font-family: 'Palanquin';
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .footer {
@@ -855,6 +901,7 @@ h1 {
         width: calc(100% / 5);
         height: 100%;
         border-radius: 20px;
+        object-fit: cover;
     }
 
     .slider_a input[value="one"]:checked~.slider_a_wrapper {
@@ -937,12 +984,42 @@ h1 {
     }
 
     .share-information {
-        gap: 1px;
-        left: -35px;
+        gap: 8px;
+        left: -45px;
+        width: 100%;
+        justify-content: center;
     }
 
-    .follow-share p {
+    .follow-button {
+        width: 120px;
+        height: 42px;
+        gap: 5px;
+    }
+
+    .follow-button img {
+        width: 20px;
+    }
+
+    .follow-button span {
         font-size: 1rem;
+    }
+
+    .share-options {
+        left: calc(100% + 8px);
+        gap: 4px;
+    }
+
+    .share-green {
+        width: 24px;
+        height: 24px;
+    }
+
+    .share-links {
+        width: 70px;
+    }
+
+    .share-links a {
+        font-size: 0.85rem;
     }
 
     .arrow-icon {

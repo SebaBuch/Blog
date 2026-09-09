@@ -835,6 +835,9 @@ html {
     .highlight-header {
         width: 100%;
     }
+    .highlight-section {
+    width: 100%;
+}
 
     .highlight-header>h3 {
         font-size: clamp(28px, 4vw, 40px);
@@ -884,8 +887,8 @@ html {
     }
 
     .article-text {
-        width: calc(100% - 80px);
-        margin: 60px auto 0;
+    width: 100%;
+    margin: 60px auto 0;
     }
 
     .article-text p {
@@ -989,7 +992,9 @@ html {
         object-fit: contain;
         display: block;
     }
-
+body {
+    overflow-x: hidden;
+}
     .article-container {
         padding-left: 15px;
         padding-right: 15px;
